@@ -6,11 +6,11 @@ subtitle: Personal website, research, teaching, and notes.
 
 profile:
   align: right
-  image: prof_pic.svg
+  image: Irisa_crop.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="mailto:irisa@example.com">irisa@example.com</a></p>
-    <p><a href="/assets/pdf/irisa-cv-placeholder.pdf">Curriculum Vitae</a></p>
+    <p><a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf">Curriculum Vitae</a></p>
     <p>Replace this block with your affiliation, office, and current links.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -36,6 +36,4 @@ Use the [Misc.](/misc/) tab for links, notes, talks, and other non-core items.
 
 ## Current placeholders
 
-- Photo: `assets/img/prof_pic.svg`
-- CV PDF: `assets/pdf/irisa-cv-placeholder.pdf`
 - Contact email: `irisa@example.com`

@@ -11,9 +11,10 @@ This page is the research landing page for the migrated site.
 
 ## Working Papers
 
-1. Paper title placeholder one. [PDF](/assets/pdf/paper-01-placeholder.pdf) Abstract coming soon.
-2. Paper title placeholder two. [PDF](/assets/pdf/paper-02-placeholder.pdf) Abstract coming soon.
-3. Paper title placeholder three. [PDF](/assets/pdf/paper-03-placeholder.pdf) Abstract coming soon.
+1. AI and Returns to Experience in Entrepreneurship (with Ziqing Yan). [PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/AI_Yan_Zhou_09222025.pdf)
+2. Asking Price paper. [PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/public_version.pdf)
+
+Note: no slides file is linked for the Asking Price paper.
 
 ## Selected Work in Progress
 
