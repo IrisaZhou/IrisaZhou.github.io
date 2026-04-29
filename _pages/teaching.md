@@ -1,15 +1,20 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Course materials, schedules, and resources for classes taught.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 3
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+This is the placeholder Teaching page for the first migration pass.
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+## Courses
 
-{% include courses.liquid %}
+1. Course placeholder one.
+2. Course placeholder two.
+
+## Materials
+
+- Put lecture notes in a future folder or link them from here.
+- Put syllabi and handouts in `assets/pdf/`.
