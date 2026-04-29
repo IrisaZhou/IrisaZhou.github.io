@@ -5,35 +5,27 @@ permalink: /
 subtitle: Personal website, research, teaching, and notes.
 
 profile:
-  align: right
+  align: left
   image: Irisa_crop.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p><a href="mailto:irisa@example.com">irisa@example.com</a></p>
-    <p><a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf">Curriculum Vitae</a></p>
-    <p>Replace this block with your affiliation, office, and current links.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-This home page is the first migration pass from the legacy site into al-folio.
+I am Irisa Zhou, a Ph.D. candidate at the Economics Department at University of
+Toronto. My research understands how microeconomic constraints shape
+macroeconomic consequences.
 
-Use it as a compact landing page and move fuller content to the dedicated tabs.
+Questions that interest me:
 
-## Research
+- How do information frictions distort the labor market?
+- How do innate advantages (such as socio-economic endowments or prior
+  accumulation upon shocks) scale up to influence the aggregate economy?
 
-Add your research summary here and keep the detailed items on the [Research](/research/)
-page.
+<!-- markdownlint-disable-next-line MD059 -->
+You can find my CV [here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
 
-## Teaching
+Research Interest: Macro, Labor, Education, AI
 
-Use the [Teaching](/teaching/) tab for courses, course notes, and materials.
-
-## Misc
-
-Use the [Misc.](/misc/) tab for links, notes, talks, and other non-core items.
-
-## Current placeholders
-
-- Contact email: `irisa@example.com`
+Email: [irisa.zhou@mail.utoronto.ca](mailto:irisa.zhou@mail.utoronto.ca)
