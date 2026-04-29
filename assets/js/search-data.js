@@ -469,7 +469,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/irisa-cv-placeholder.pdf", "_blank");
+          window.open("https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf", "_blank");
         },
       },{
         id: 'social-email',
