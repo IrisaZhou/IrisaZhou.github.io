@@ -14,3 +14,6 @@ _data/citations.yml
 # Large legacy HTML exports - not part of the site
 legacy/
 plan/
+# al-folio documentation files - not site content
+CUSTOMIZE.md
+CONTRIBUTING.md
