@@ -2,27 +2,30 @@
 layout: page
 title: Research
 permalink: /research/
-description: Research highlights, working papers, and work in progress.
+description:
 nav: true
 nav_order: 2
 ---
 
-This page is the research landing page for the migrated site.
+## Job Market Paper
+
+**Learning the Major-Industry Mismatch**
+
+_Presented at: CES NA (2025), CEA (2025), University of Toronto (2025)_
+
+---
 
 ## Working Papers
 
-1. AI and Returns to Experience in Entrepreneurship (with Ziqing Yan). [PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/AI_Yan_Zhou_09222025.pdf)
-2. Asking Price paper. [PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/public_version.pdf)
+**AI and Returns to Experience in Entrepreneurship** (with [Ziqing Yan](https://ziqingyan.com/))
+\[[PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/AI_Yan_Zhou_09222025.pdf)\]
 
-Note: no slides file is linked for the Asking Price paper.
+**Searching in the Housing Market with Non-Committed Prices**
 
-## Selected Work in Progress
+_Presented at: CEA (2024), University of Toronto (2023)_ \| Draft available upon request
 
-1. Work-in-progress placeholder one.
-2. Work-in-progress placeholder two.
+---
 
-## Links
+## Work in Progress
 
-- [Home](/)
-- [Teaching](/teaching/)
-- [Misc.](/misc/)
+**Safety Net or Trap: Informal Sector Employment over the Business Cycle** (with Yanran Guo)
