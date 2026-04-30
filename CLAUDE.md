@@ -38,16 +38,16 @@ The CI `prettier.yml` workflow will fail PRs that are not formatted.
 
 ## Key Files for Content Editing
 
-| What to change | File |
-|---|---|
-| Bio, intro, homepage research section | `_pages/about.md` |
-| Research tab content | `_pages/research.md` |
-| Teaching tab content | `_pages/teaching.md` |
-| Misc tab content | `_pages/misc.md` |
-| Bibliography (unused in nav, but powers search) | `_bibliography/papers.bib` |
-| Site-wide settings (name, url, analytics) | `_config.yml` |
-| Social links (email, GitHub, LinkedIn) | `_data/socials.yml` |
-| Profile photo | `assets/img/Irisa_crop.jpeg` |
+| What to change                                  | File                         |
+| ----------------------------------------------- | ---------------------------- |
+| Bio, intro, homepage research section           | `_pages/about.md`            |
+| Research tab content                            | `_pages/research.md`         |
+| Teaching tab content                            | `_pages/teaching.md`         |
+| Misc tab content                                | `_pages/misc.md`             |
+| Bibliography (unused in nav, but powers search) | `_bibliography/papers.bib`   |
+| Site-wide settings (name, url, analytics)       | `_config.yml`                |
+| Social links (email, GitHub, LinkedIn)          | `_data/socials.yml`          |
+| Profile photo                                   | `assets/img/Irisa_crop.jpeg` |
 
 ## Navigation Order
 
