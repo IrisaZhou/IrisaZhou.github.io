@@ -79,3 +79,4 @@ All other pages (`publications`, `projects`, `blog`, `cv`, `books`, `repositorie
 - The CI deploy workflow (`deploy.yml`) pushes the built site to `gh-pages` branch. GitHub Pages source must be set to that branch in repo Settings → Pages.
 - Do not set `toc_enabled` in `_config.yml` — it is not a valid al-folio key and will break the build.
 - Keep `external_sources:` empty in `_config.yml`. The `_plugins/external-posts.rb` plugin makes live HTTP requests with no error handling — any network failure in CI crashes the build with exit code 2.
+- The `legacy/` and `plan/` directories are in the `exclude` list and must stay there. The legacy HTML files are 11–16 MB each (base64-encoded images); `jekyll-minifier` will crash trying to parse them if they are not excluded.
