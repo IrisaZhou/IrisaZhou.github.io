@@ -78,3 +78,4 @@ All other pages (`publications`, `projects`, `blog`, `cv`, `books`, `repositorie
 - `url` and `baseurl` in `_config.yml` must be consistent — for a user page (`username.github.io`) set `baseurl:` to empty.
 - The CI deploy workflow (`deploy.yml`) pushes the built site to `gh-pages` branch. GitHub Pages source must be set to that branch in repo Settings → Pages.
 - Do not set `toc_enabled` in `_config.yml` — it is not a valid al-folio key and will break the build.
+- Keep `external_sources:` empty in `_config.yml`. The `_plugins/external-posts.rb` plugin makes live HTTP requests with no error handling — any network failure in CI crashes the build with exit code 2.
