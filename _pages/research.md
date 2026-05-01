@@ -25,7 +25,6 @@ _styles: >
   </div>
   <div class="paper-info">
     <p class="paper-title">Learning the Major-Industry Mismatch</p>
-    <p class="paper-authors">Irisa Zhou</p>
     <p class="paper-meta">Updated Draft: April 2026</p>
     <p class="paper-meta">
       Presented at: CES NA (2025), CEA (2025), University of Toronto (2025)
@@ -88,8 +87,7 @@ _styles: >
       AI and Returns to Experience in Entrepreneurship
     </p>
     <p class="paper-authors">
-      Irisa Zhou and
-      <a href="https://ziqingyan.com/" target="_blank">Ziqing Yan</a>
+      <em>with <a href="https://ziqingyan.com/" target="_blank">Ziqing Yan</a></em>
     </p>
     <p class="paper-meta">Updated Draft: April 2026</p>
     <details class="paper-abstract">
@@ -140,7 +138,6 @@ _styles: >
     <p class="paper-title">
       Searching in the Housing Market with Non-Committed Prices
     </p>
-    <p class="paper-authors">Irisa Zhou</p>
     <p class="paper-meta">Updated Draft: April 2026</p>
     <p class="paper-meta">
       Presented at: CEA (2024), University of Toronto (2023)
@@ -178,8 +175,7 @@ _styles: >
       Safety Net or Trap: Informal Sector Employment over the Business Cycle
     </p>
     <p class="paper-authors">
-      <a href="https://yanranecon.github.io/" target="_blank">Yanran Guo</a> and
-      Irisa Zhou
+      <em>with <a href="https://yanranecon.github.io/" target="_blank">Yanran Guo</a></em>
     </p>
     <details class="paper-abstract">
       <summary>Abstract</summary>
