@@ -7,7 +7,7 @@ subtitle:
 profile:
   align: left
   image: Irisa_crop.jpeg
-  image_circular: true
+  image_circular: false
   more_info: >
     <div class="profile-name">Irisa Zhou</div>
     <div class="profile-title">Ph.D. Candidate</div>
@@ -30,11 +30,12 @@ macroeconomic consequences.
 
 Questions that interest me:
 
-- How do information frictions distort the labor market?
-- How do innate advantages (such as socio-economic endowments or prior
-  accumulation upon shocks) scale up to influence the aggregate economy?
+<div class="about-questions">
+  <p>How do information frictions distort the labor market?</p>
+  <p>How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?</p>
+</div>
 
-I am on the 2025–2026 job market. You can find my CV
+You can find my CV
 [here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
 
 **Research Interests:** Macro, Labor, Education, AI
