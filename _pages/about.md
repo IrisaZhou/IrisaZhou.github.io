@@ -24,6 +24,8 @@ selected_papers: false
 social: false
 ---
 
+WELCOME!
+
 I am Irisa Zhou, a Ph.D. candidate at the Economics Department at University of
 Toronto. My research understands how microeconomic constraints shape
 macroeconomic consequences.
@@ -31,8 +33,10 @@ macroeconomic consequences.
 Questions that interest me:
 
 <div class="about-questions">
-  <p>How do information frictions distort the labor market?</p>
-  <p>How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?</p>
+  <ul>
+    <li>How do information frictions distort the labor market?</li>
+    <li>How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?</li>
+  </ul>
 </div>
 
 You can find my CV
