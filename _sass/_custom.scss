@@ -1,0 +1,64 @@
+// Custom overrides for Irisa Zhou's academic site
+
+// About page: wider profile column and block-level more-info items
+@media (min-width: 576px) {
+  .profile {
+    width: 35%;
+  }
+}
+
+.profile .more-info {
+  font-family: inherit !important;
+  text-align: center;
+
+  // Override al-folio's default inline-block so each item stacks vertically
+  p {
+    display: block !important;
+    margin: 0.3rem auto !important;
+  }
+}
+
+// Profile sidebar elements
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.9rem 0 0.2rem;
+  line-height: 1.2;
+}
+
+.profile-title {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.profile-uni a {
+  font-size: 0.95rem;
+}
+
+.profile-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0.9rem 0 0.4rem;
+  font-size: 1.6rem;
+
+  a {
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .cv-link {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    border: 2px solid #333;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+}

@@ -9,13 +9,17 @@ profile:
   image: Irisa_crop.jpeg
   image_circular: true
   more_info: >
-    <p>Ph.D. Candidate</p>
-    <p>Department of Economics</p>
-    <p>University of Toronto</p>
-    <p>📍 Toronto, Canada</p>
-    <p>✉️ <a href="mailto:irisa.zhou@mail.utoronto.ca">irisa.zhou@mail.utoronto.ca</a></p>
-    <p><a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf" target="_blank">CV</a></p>
+    <div class="profile-name">Irisa Zhou</div>
+    <div class="profile-title">Ph.D. Candidate</div>
+    <div class="profile-uni"><a href="https://www.economics.utoronto.ca/" target="_blank">University of Toronto</a></div>
+    <div class="profile-icons">
+      <a href="mailto:irisa.zhou@mail.utoronto.ca" title="Email" style="color: #d93025;"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/IrisaZhou" title="GitHub" style="color: #24292e;"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/irisa-zhou" title="LinkedIn" style="color: #0077b5;"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf" title="CV" target="_blank" class="cv-link">CV</a>
+    </div>
 
+hide_header: true
 selected_papers: false
 social: false
 ---
@@ -30,28 +34,11 @@ Questions that interest me:
 - How do innate advantages (such as socio-economic endowments or prior
   accumulation upon shocks) scale up to influence the aggregate economy?
 
-I am on the 2025–2026 job market.
+I am on the 2025–2026 job market. You can find my CV
+[here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
 
 **Research Interests:** Macro, Labor, Education, AI
 
----
-
-## Research
-
-#### Job Market Paper
-
-**Learning the Major-Industry Mismatch**
-
-_Presented at: CES NA (2025), CEA (2025), University of Toronto (2025)_
-
-#### Working Papers
-
-**AI and Returns to Experience in Entrepreneurship** (with [Ziqing Yan](https://ziqingyan.com/))
-\[[PDF](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/AI_Yan_Zhou_09222025.pdf)\]
-
-**Searching in the Housing Market with Non-Committed Prices**
-_Presented at: CEA (2024), University of Toronto (2023)_ \| Draft available upon request
-
-#### Work in Progress
-
-**Safety Net or Trap: Informal Sector Employment over the Business Cycle** (with Yanran Guo)
+**Contact:** [irisa.zhou@mail.utoronto.ca](mailto:irisa.zhou@mail.utoronto.ca)
+&nbsp;&nbsp;|&nbsp;&nbsp;
+[irisa.x.zhou@gmail.com](mailto:irisa.x.zhou@gmail.com)
