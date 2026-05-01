@@ -17,8 +17,8 @@ _styles: >
 <div class="paper-row">
   <div class="paper-figure">
     <img
-      src="{{ '/assets/img/1.jpg' | relative_url }}"
-      alt="placeholder figure"
+      src="{{ '/assets/img/papers/jmp-figure.png' | relative_url }}"
+      alt="Learning the Major-Industry Mismatch figure"
       data-zoomable
       style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
     />
@@ -77,8 +77,8 @@ _styles: >
 <div class="paper-row">
   <div class="paper-figure">
     <img
-      src="{{ '/assets/img/2.jpg' | relative_url }}"
-      alt="placeholder figure"
+      src="{{ '/assets/img/papers/ai-figure.png' | relative_url }}"
+      alt="AI and Returns to Experience figure"
       data-zoomable
       style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
     />
@@ -130,8 +130,8 @@ _styles: >
 <div class="paper-row">
   <div class="paper-figure">
     <img
-      src="{{ '/assets/img/3.jpg' | relative_url }}"
-      alt="placeholder figure"
+      src="{{ '/assets/img/papers/housing-figure.png' | relative_url }}"
+      alt="Searching in the Housing Market figure"
       data-zoomable
       style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
     />
