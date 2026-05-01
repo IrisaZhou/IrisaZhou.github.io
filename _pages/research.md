@@ -177,7 +177,10 @@ _styles: >
     <p class="paper-title">
       Safety Net or Trap: Informal Sector Employment over the Business Cycle
     </p>
-    <p class="paper-authors">Yanran Guo and Irisa Zhou</p>
+    <p class="paper-authors">
+      <a href="https://yanranecon.github.io/" target="_blank">Yanran Guo</a> and
+      Irisa Zhou
+    </p>
     <details class="paper-abstract">
       <summary>Abstract</summary>
       <div class="abstract-body">
