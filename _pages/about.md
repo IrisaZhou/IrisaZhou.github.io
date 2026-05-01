@@ -1,19 +1,24 @@
 ---
 layout: about
-title: Home
+title: about
 permalink: /
-subtitle: Ph.D. Candidate, Department of Economics, University of Toronto
+subtitle:
 
 profile:
   align: left
   image: Irisa_crop.jpeg
-  image_circular: false
+  image_circular: true
+  more_info: >
+    <p>Ph.D. Candidate</p>
+    <p>Department of Economics</p>
+    <p>University of Toronto</p>
+    <p>📍 Toronto, Canada</p>
+    <p>✉️ <a href="mailto:irisa.zhou@mail.utoronto.ca">irisa.zhou@mail.utoronto.ca</a></p>
+    <p><a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf" target="_blank">CV</a></p>
 
 selected_papers: false
-social: true
+social: false
 ---
-
-WELCOME!
 
 I am Irisa Zhou, a Ph.D. candidate at the Economics Department at University of
 Toronto. My research understands how microeconomic constraints shape
@@ -25,12 +30,9 @@ Questions that interest me:
 - How do innate advantages (such as socio-economic endowments or prior
   accumulation upon shocks) scale up to influence the aggregate economy?
 
-I am on the 2025 - 2026 Job market. You can find my CV
-[here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
+I am on the 2025–2026 job market.
 
-Research Interest: Macro, Labor, Education, AI
-
-Email: irisa.zhou@mail.utoronto.ca
+**Research Interests:** Macro, Labor, Education, AI
 
 ---
 
