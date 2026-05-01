@@ -68,6 +68,152 @@
   }
 }
 
+// ── Research page ─────────────────────────────────────────────────────────────
+
+.research-section-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2.5rem 0 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+// Two-column paper entry: [figure] [details]
+.paper-row {
+  display: flex;
+  gap: 2rem;
+  margin: 1.8rem 0;
+  align-items: flex-start;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.paper-figure {
+  flex: 0 0 210px;
+
+  .figure-placeholder {
+    width: 210px;
+    height: 150px;
+    background: #f4f4f4;
+    border: 1px dashed #bbb;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.paper-info {
+  flex: 1;
+
+  .paper-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0.35rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .paper-authors {
+    color: #555;
+    margin: 0.15rem 0;
+    font-size: 0.95rem;
+  }
+
+  .paper-meta {
+    color: #555;
+    margin: 0.15rem 0;
+    font-size: 0.95rem;
+  }
+}
+
+// Collapsible abstract
+details.paper-abstract {
+  margin: 0.75rem 0;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2a7a5a;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▶";
+      font-size: 0.7rem;
+      transition: transform 0.15s;
+    }
+  }
+
+  &[open] summary::before {
+    content: "▼";
+  }
+
+  .abstract-body {
+    margin-top: 0.6rem;
+    color: #333;
+    line-height: 1.65;
+    font-size: 0.95rem;
+  }
+}
+
+// PDF / links button row
+.paper-links {
+  margin-top: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paper-btn {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 1.5px solid #444;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.paper-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0.5rem 0 0;
+}
+
+// ── About page questions ───────────────────────────────────────────────────────
+
 // Indented questions block (no bullets)
 .about-questions {
   padding-left: 1.5rem;
