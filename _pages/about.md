@@ -10,7 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <div class="profile-name">Irisa Zhou</div>
-    <div class="profile-title">Ph.D. Candidate</div>
     <div class="profile-uni"><a href="https://www.economics.utoronto.ca/" target="_blank">University of Toronto</a></div>
     <div class="profile-icons">
       <a href="mailto:irisa.zhou@mail.utoronto.ca" title="Email" style="color: #d93025;"><i class="fa-solid fa-envelope"></i></a>
@@ -32,12 +31,8 @@ macroeconomic consequences.
 
 Questions that interest me:
 
-<div class="about-questions">
-  <ul>
-    <li>How do information frictions distort the labor market?</li>
-    <li>How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?</li>
-  </ul>
-</div>
+- How do information frictions distort the labor market?
+- How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?
 
 You can find my CV
 [here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
