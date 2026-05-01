@@ -2,18 +2,19 @@
 layout: page
 title: Misc.
 permalink: /misc/
-description:
 nav: true
 nav_order: 4
+_styles: >
+  .post-header { display: none; }
 ---
 
-## Cities I've Called Home 🌼
+<h2 class="research-section-header">Cities I've Called Home 🌼</h2>
 
 - Guangzhou, Guangdong, China
 - Orlando, Florida, USA
 - Montreal, Quebec, Canada
 - Toronto, Ontario, Canada
 
-## My Scholarly Companion 🦴
+<h2 class="research-section-header">My Scholarly Companion 🦴</h2>
 
 More to come.
