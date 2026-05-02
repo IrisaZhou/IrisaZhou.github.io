@@ -20,7 +20,7 @@ _styles: >
       src="/assets/img/papers/jmp-figure.png"
       alt="Learning the Major-Industry Mismatch figure"
       data-zoomable
-      style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
+      style="width:210px; height:auto; display:block; border-radius:4px; cursor:zoom-in;"
     />
   </div>
   <div class="paper-info">
