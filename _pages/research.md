@@ -159,7 +159,12 @@ _styles: >
       </div>
     </details>
     <div class="paper-links">
-      <span style="font-size:0.9rem; color:#777;">Slides &amp; draft available upon request</span>
+      <a
+        href="https://irisazhou.github.io/papers/AskingPriceWP.pdf"
+        target="_blank"
+        class="paper-btn"
+        >PDF</a
+      >
     </div>
   </div>
 </div>
