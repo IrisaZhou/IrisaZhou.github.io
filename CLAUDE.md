@@ -72,6 +72,10 @@ All other pages (`publications`, `projects`, `blog`, `cv`, `books`, `repositorie
 - The `_teachings/` collection is wired up but currently empty — add `.md` files there (with `layout: course`) to populate the Teaching page.
 - ImageMagick is required for the build (handles responsive WebP image generation). It is pre-installed in the Docker image.
 
+## Content Conventions
+
+- When Irisa says **"wrap this in a block environment"**, use a Bootstrap alert box: `<div class="alert alert-info" role="alert" markdown="1"> ... </div>`. This renders as a rounded, bordered callout box (light teal by default). Other color variants: `alert-warning` (yellow), `alert-success` (green), `alert-danger` (red).
+
 ## Common Pitfalls
 
 - Special characters in `_config.yml` values must be quoted: `title: "My: Site"`.
