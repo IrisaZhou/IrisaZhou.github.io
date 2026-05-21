@@ -1,0 +1,75 @@
+<style>
+.claude-code-toc {
+  position: sticky;
+  top: 80px;
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-left: 3px solid #dee2e6;
+  font-size: 0.85rem;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+.claude-code-toc .toc-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+.claude-code-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.claude-code-toc > ul > li { margin-bottom: 0.6rem; }
+.claude-code-toc ul ul { padding-left: 0.75rem; margin-top: 0.3rem; }
+.claude-code-toc ul ul li { margin-bottom: 0.3rem; }
+.claude-code-toc a { color: #495057; text-decoration: none; line-height: 1.4; }
+.claude-code-toc a:hover { color: var(--global-theme-color, #4a7c9e); }
+.claude-code-toc .toc-active > a { font-weight: 600; color: var(--global-theme-color, #4a7c9e); }
+</style>
+
+<nav class="claude-code-toc">
+  <div class="toc-title">Claude Code Guide</div>
+  <ul>
+    <li class="{% if page.url == '/claude-code/' %}toc-active{% endif %}">
+      <a href="/claude-code/">Overview</a>
+    </li>
+    <li class="{% if page.url contains 'getting-started' %}toc-active{% endif %}">
+      <a href="/claude-code/getting-started/">1. Getting Started</a>
+    </li>
+    <li class="{% if page.url contains 'what-works' %}toc-active{% endif %}">
+      <a href="/claude-code/what-works/">2. What Works vs. What Doesn't</a>
+    </li>
+    <li class="{% if page.url contains 'comparing' %}toc-active{% endif %}">
+      <a href="/claude-code/comparing-agents/">3. Comparing Agents</a>
+      <ul>
+        <li class="{% if page.url contains 'copilot' %}toc-active{% endif %}">
+          <a href="/claude-code/comparing-copilot-claude-codex/">↳ Copilot, Claude & Codex</a>
+        </li>
+        <li class="{% if page.url contains 'gemini' %}toc-active{% endif %}">
+          <a href="/claude-code/comparing-gemini-chatgpt-claude/">↳ Gemini, ChatGPT & Claude</a>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if page.url contains '/workflow' or page.url contains 'how-to-learn' %}toc-active{% endif %}">
+      <a href="/claude-code/workflow/">4. A Typical Workflow</a>
+      <ul>
+        <li class="{% if page.url contains 'sample-workflow' %}toc-active{% endif %}">
+          <a href="/claude-code/sample-workflow/">↳ My Sample Workflow</a>
+        </li>
+        <li class="{% if page.url contains 'how-to-learn' %}toc-active{% endif %}">
+          <a href="/claude-code/how-to-learn/">↳ How to Learn Efficiently</a>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if page.url contains 'skills-and-mcps' or page.url contains 'research-project' %}toc-active{% endif %}">
+      <a href="/claude-code/skills-and-mcps/">5. Skills & MCPs</a>
+      <ul>
+        <li class="{% if page.url contains 'research-project' %}toc-active{% endif %}">
+          <a href="/claude-code/research-project-skills/">↳ Research Project Skills</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>

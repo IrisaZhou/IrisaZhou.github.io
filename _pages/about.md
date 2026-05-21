@@ -42,3 +42,5 @@ You can find my CV
 **Contact:** [irisa.zhou@mail.utoronto.ca](mailto:irisa.zhou@mail.utoronto.ca)
 &nbsp;&nbsp;|&nbsp;&nbsp;
 [irisa.x.zhou@gmail.com](mailto:irisa.x.zhou@gmail.com)
+
+**Update:** [Sharing my own Claude Code experience →](/claude-code/)
