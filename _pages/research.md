@@ -110,7 +110,7 @@ _styles: >
     </details>
     <div class="paper-links">
       <a
-        href="https://irisazhou.github.io/papers/AI_Yan_Zhou_09222025.pdf"
+        href="https://irisazhou.github.io/papers/AI-Innovation-WP.pdf"
         target="_blank"
         class="paper-btn"
         >PDF</a
