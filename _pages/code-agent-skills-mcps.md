@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skills & MCPs I Used and Created
-permalink: /claude-code/skills-and-mcps/
+permalink: /code-agent/skills-and-mcps/
 nav: false
 _styles: >
   .post-header { display: none; }
@@ -12,11 +12,11 @@ _styles: >
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">
 
-This section covers the integrations, MCP servers, and Claude Code skills that have made the biggest difference in my workflow — and notes on how to learn new tools efficiently and how to think about starting a research project with AI assistance.
+This section covers the integrations, MCP servers, and code agent skills that have made the biggest difference in my workflow — and notes on how to learn new tools efficiently and how to think about starting a research project with AI assistance.
 
 **In this section:**
 
-- [Skills for Initiating a Research Project](/claude-code/research-project-skills/)
+- [Skills for Initiating a Research Project](/code-agent/research-project-skills/)
 
 </div>
 <div class="col-md-4 col-lg-3 d-none d-md-block">

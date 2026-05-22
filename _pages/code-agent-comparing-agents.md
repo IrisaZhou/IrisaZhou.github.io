@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Comparing Across Agents & Chat Interfaces
-permalink: /claude-code/comparing-agents/
+permalink: /code-agent/comparing-agents/
 nav: false
 _styles: >
   .post-header { display: none; }
@@ -16,8 +16,8 @@ This section collects side-by-side comparisons of the main AI tools I have used 
 
 **Comparisons in this section:**
 
-- [Comparing Copilot, Claude, and Codex](/claude-code/comparing-copilot-claude-codex/)
-- [Comparing Gemini, ChatGPT, and Claude](/claude-code/comparing-gemini-chatgpt-claude/)
+- [Comparing Copilot, Claude, and Codex](/code-agent/comparing-copilot-claude-codex/)
+- [Comparing Gemini, ChatGPT, and Claude](/code-agent/comparing-gemini-chatgpt-claude/)
 
 </div>
 <div class="col-md-4 col-lg-3 d-none d-md-block">

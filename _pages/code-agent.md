@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My Claude Code Experience
-permalink: /claude-code/
+title: My Code Agent Experience
+permalink: /code-agent/
 nav: true
 nav_order: 4
 _styles: >
@@ -11,7 +11,7 @@ _styles: >
   .guide-num { font-size: 1.1rem; font-weight: 700; color: #adb5bd; min-width: 2rem; }
 ---
 
-<h2 class="research-section-header">My Claude Code Experience</h2>
+<h2 class="research-section-header">My Code Agent Experience</h2>
 
 This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time. My goal is to share what actually works (and what doesn't) when integrating code agents into an economics research workflow, based on my own hands-on experience. If you're early in your PhD and want to use AI to get more done without yet having a strong command of the literature or a highly specialized skill set, this is for you. A note upfront: all of the content here is produced from my own input with the help of code agents.
 
@@ -30,7 +30,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
 ---
 
 <div class="guide-outline">
-  <a href="/claude-code/getting-started/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/getting-started/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">1</span>
     <div>
       <strong>Getting Started</strong><br>
@@ -38,7 +38,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/claude-code/what-works/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/what-works/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">2</span>
     <div>
       <strong>What Works vs. What Doesn't Work</strong><br>
@@ -46,7 +46,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/claude-code/comparing-agents/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/comparing-agents/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">3</span>
     <div>
       <strong>Comparing Across Agents & Chat Interfaces</strong><br>
@@ -54,7 +54,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/claude-code/workflow/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/workflow/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">4</span>
     <div>
       <strong>A Typical Example of My Workflow</strong><br>
@@ -62,7 +62,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/claude-code/skills-and-mcps/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/skills-and-mcps/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">5</span>
     <div>
       <strong>Sharing Skills & MCPs I Used and Created</strong><br>

@@ -1,13 +1,13 @@
 ---
 layout: page
-title: What Works vs. What Doesn't Work
-permalink: /claude-code/what-works/
+title: Skills for Initiating a Research Project
+permalink: /code-agent/research-project-skills/
 nav: false
 _styles: >
   .post-header { display: none; }
 ---
 
-<h2 class="research-section-header">What Works vs. What Doesn't Work</h2>
+<h2 class="research-section-header">Skills for Initiating a Research Project</h2>
 
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">

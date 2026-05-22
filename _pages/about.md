@@ -43,4 +43,4 @@ You can find my CV
 &nbsp;&nbsp;|&nbsp;&nbsp;
 [irisa.x.zhou@gmail.com](mailto:irisa.x.zhou@gmail.com)
 
-**Update:** [Sharing my own Claude Code experience →](/claude-code/)
+**Update:** [Sharing my own code agent experience →](/code-agent/)

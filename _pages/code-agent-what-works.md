@@ -1,13 +1,13 @@
 ---
 layout: page
-title: How to Learn Something New Efficiently
-permalink: /claude-code/how-to-learn/
+title: What Works vs. What Doesn't Work
+permalink: /code-agent/what-works/
 nav: false
 _styles: >
   .post-header { display: none; }
 ---
 
-<h2 class="research-section-header">How to Learn Something New Efficiently</h2>
+<h2 class="research-section-header">What Works vs. What Doesn't Work</h2>
 
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">

@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Skills for Initiating a Research Project
-permalink: /claude-code/research-project-skills/
+title: Comparing Copilot, Claude, and Codex
+permalink: /code-agent/comparing-copilot-claude-codex/
 nav: false
 _styles: >
   .post-header { display: none; }
 ---
 
-<h2 class="research-section-header">Skills for Initiating a Research Project</h2>
+<h2 class="research-section-header">Comparing Copilot, Claude, and Codex</h2>
 
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">

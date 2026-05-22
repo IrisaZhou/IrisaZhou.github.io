@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Comparing Copilot, Claude, and Codex
-permalink: /claude-code/comparing-copilot-claude-codex/
+title: Comparing Gemini, ChatGPT, and Claude
+permalink: /code-agent/comparing-gemini-chatgpt-claude/
 nav: false
 _styles: >
   .post-header { display: none; }
 ---
 
-<h2 class="research-section-header">Comparing Copilot, Claude, and Codex</h2>
+<h2 class="research-section-header">Comparing Gemini, ChatGPT, and Claude</h2>
 
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">

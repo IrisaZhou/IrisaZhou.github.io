@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started
-permalink: /claude-code/getting-started/
+permalink: /code-agent/getting-started/
 nav: false
 _styles: >
   .post-header { display: none; }

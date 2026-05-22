@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Sample Workflow
-permalink: /claude-code/sample-workflow/
+permalink: /code-agent/sample-workflow/
 nav: false
 _styles: >
   .post-header { display: none; }

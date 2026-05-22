@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Typical Example of My Workflow
-permalink: /claude-code/workflow/
+permalink: /code-agent/workflow/
 nav: false
 _styles: >
   .post-header { display: none; }
@@ -16,8 +16,8 @@ This section walks through how I actually use code agents in my day-to-day resea
 
 **In this section:**
 
-- [My Sample Workflow](/claude-code/sample-workflow/) — a concrete walkthrough with annotated examples
-- [How to Learn Something New Efficiently](/claude-code/how-to-learn/)
+- [My Sample Workflow](/code-agent/sample-workflow/) — a concrete walkthrough with annotated examples
+- [How to Learn Something New Efficiently](/code-agent/how-to-learn/)
 
 </div>
 <div class="col-md-4 col-lg-3 d-none d-md-block">
