@@ -54,8 +54,19 @@
     <li class="{% if page.url contains 'getting-started' %}toc-active{% endif %}">
       <a href="/code-agent/getting-started/">1. Getting Started</a>
     </li>
-    <li class="{% if page.url contains 'what-works' %}toc-active{% endif %}">
-      <a href="/code-agent/what-works/">2. What Works vs. What Doesn't</a>
+    <li class="{% if page.url contains '/workflow' or page.url contains 'what-works' or page.url contains 'sample-workflow' or page.url contains 'how-to-learn' %}toc-active{% endif %}">
+      <a href="/code-agent/workflow/">2. A Typical Workflow</a>
+      <ul>
+        <li class="{% if page.url contains 'what-works' %}toc-active{% endif %}">
+          <a href="/code-agent/what-works/">↳ What Works vs. What Doesn't</a>
+        </li>
+        <li class="{% if page.url contains 'sample-workflow' %}toc-active{% endif %}">
+          <a href="/code-agent/sample-workflow/">↳ My Sample Workflow</a>
+        </li>
+        <li class="{% if page.url contains 'how-to-learn' %}toc-active{% endif %}">
+          <a href="/code-agent/how-to-learn/">↳ How to Learn Efficiently</a>
+        </li>
+      </ul>
     </li>
     <li class="{% if page.url contains 'comparing' %}toc-active{% endif %}">
       <a href="/code-agent/comparing-agents/">3. Comparing Agents</a>
@@ -68,24 +79,16 @@
         </li>
       </ul>
     </li>
-    <li class="{% if page.url contains '/workflow' or page.url contains 'how-to-learn' %}toc-active{% endif %}">
-      <a href="/code-agent/workflow/">4. A Typical Workflow</a>
-      <ul>
-        <li class="{% if page.url contains 'sample-workflow' %}toc-active{% endif %}">
-          <a href="/code-agent/sample-workflow/">↳ My Sample Workflow</a>
-        </li>
-        <li class="{% if page.url contains 'how-to-learn' %}toc-active{% endif %}">
-          <a href="/code-agent/how-to-learn/">↳ How to Learn Efficiently</a>
-        </li>
-      </ul>
-    </li>
     <li class="{% if page.url contains 'skills-and-mcps' or page.url contains 'research-project' %}toc-active{% endif %}">
-      <a href="/code-agent/skills-and-mcps/">5. Skills & MCPs</a>
+      <a href="/code-agent/skills-and-mcps/">4. Skills & MCPs</a>
       <ul>
         <li class="{% if page.url contains 'research-project' %}toc-active{% endif %}">
           <a href="/code-agent/research-project-skills/">↳ Research Project Skills</a>
         </li>
       </ul>
+    </li>
+    <li class="{% if page.url contains 'saving-tokens' %}toc-active{% endif %}">
+      <a href="/code-agent/saving-tokens/">5. Saving Tokens</a>
     </li>
   </ul>
 </nav>

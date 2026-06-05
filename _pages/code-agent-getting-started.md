@@ -17,7 +17,7 @@ The best starting point is a chat-based AI interface: [ChatGPT](https://chatgpt.
 That said, there are three things I would not use AI without:
 
 1. **VS Code or Cursor** — a proper code editor makes it much easier to review what the agent is actually doing to your files.
-2. **Basic familiarity with GitHub** — version control is not optional; learn the basics [here](/teaching/git-and-terminal/). It is your safety net.
+2. **Basic familiarity with GitHub** — version control is not optional; learn the basics [here](/teaching/git-and-terminal/). In practice, I keep all my project files in a local Git-backed folder and store data separately in Dropbox, linked in via a symlink. [See how I set this up.](/code-agent/file-setup/)
 3. **A local folder that is fully Git-backed** — only ever point the agent at a folder that is tracked by a repository. Never give it access to anything you have not committed.
 
 <div class="alert alert-danger" role="alert" markdown="1">

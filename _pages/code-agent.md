@@ -38,13 +38,16 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/code-agent/what-works/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <div class="list-group-item d-flex align-items-start py-3">
     <span class="guide-num me-3">2</span>
     <div>
-      <strong>What Works vs. What Doesn't Work</strong><br>
-      <small class="text-muted">Honest takeaways from months of daily use in an economics research context</small>
+      <a href="/code-agent/workflow/" class="text-decoration-none text-dark"><strong>A Typical Example of My Workflow</strong></a><br>
+      <small class="text-muted">Different settings, different tasks, different approaches — how I actually use these tools day to day</small>
+      <div class="mt-1" style="padding-left: 0.6rem; border-left: 2px solid #dee2e6;">
+        <a href="/code-agent/what-works/" class="text-muted d-block" style="font-size: 0.8rem;">↳ What Works vs. What Doesn't Work</a>
+      </div>
     </div>
-  </a>
+  </div>
 
   <a href="/code-agent/comparing-agents/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">3</span>
@@ -54,19 +57,19 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/code-agent/workflow/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">4</span>
-    <div>
-      <strong>A Typical Example of My Workflow</strong><br>
-      <small class="text-muted">Different settings, different tasks, different approaches — how I actually use these tools day to day</small>
-    </div>
-  </a>
-
   <a href="/code-agent/skills-and-mcps/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">5</span>
+    <span class="guide-num me-3">4</span>
     <div>
       <strong>Sharing Skills & MCPs I Used and Created</strong><br>
       <small class="text-muted">Curated integrations, shortcuts, and tools that have made the biggest difference</small>
+    </div>
+  </a>
+
+  <a href="/code-agent/saving-tokens/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+    <span class="guide-num me-3">5</span>
+    <div>
+      <strong>Saving Tokens in My Process</strong><br>
+      <small class="text-muted">How I reduce token usage without sacrificing quality — practical habits and settings that add up</small>
     </div>
   </a>
 </div>
