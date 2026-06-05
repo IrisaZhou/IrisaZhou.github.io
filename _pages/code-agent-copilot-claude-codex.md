@@ -17,11 +17,13 @@ _styles: >
 Below are three common strengths of using Copilot in practical workflows:
 
 1. Use it on a specific notebook cell or a specific input in a file.
-  - This approach is less hassle and uses fewer tokens than invoking a full code agent, and it more reliably achieves the exact change you want.
-  - It avoids broad file conflicts or large-scale rewrites, making it ideal for small, precise edits.
+
+- This approach is less hassle and uses fewer tokens than invoking a full code agent, and it more reliably achieves the exact change you want.
+- It avoids broad file conflicts or large-scale rewrites, making it ideal for small, precise edits.
 
 2. For simple, straightforward tasks, Copilot's outputs are typically more direct and faster than an agent's.
-  - Example:
+
+- Example:
   <small class="text-muted">For example: in Python code that currently reads a CSV, you want to change it to read a Parquet file instead; this usually requires only a few local edits (variables/types/read functions). Copilot tends to be faster and more token-efficient than Claude or Codex for this kind of change.</small>
 
 3. In Jupyter Notebooks, Copilot offers a more interactive and intuitive experience: it helps you run cells and quickly validate results, which is often more convenient than using a code agent.
