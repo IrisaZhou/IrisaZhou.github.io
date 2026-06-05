@@ -22,7 +22,7 @@ The process has four parts.
 
 Start by asking the AI to give you a structured overview of the topic. The goal is not to understand everything yet — it is to know what exists so you can navigate it.
 
-Ask something like: *"What are the main responsibilities and areas of influence of [institution/concept]? Give me a structured outline."*
+Ask something like: _"What are the main responsibilities and areas of influence of [institution/concept]? Give me a structured outline."_
 
 This step also serves as a quick orientation to the scope of what you are learning, which is useful context before going deeper.
 
@@ -40,7 +40,7 @@ A few things that make this step work well:
 - **Ask follow-up questions on each answer.** This both deepens your understanding and surfaces the kinds of follow-up questions you might face in a real conversation.
 - If the conversation runs long and the AI loses track of earlier context, just open a new chat and pick up from the specific sub-topic you want to continue with.
 
-**Example follow-up prompt:** *"What theoretical frameworks does the surveillance function of monetary institutions rely on, and why?"*
+**Example follow-up prompt:** _"What theoretical frameworks does the surveillance function of monetary institutions rely on, and why?"_
 
 ---
 
@@ -48,11 +48,11 @@ A few things that make this step work well:
 
 After Part 2, open a fresh conversation — no Learn mode. Ask the AI to generate scenario-based questions you might face in a serious discussion of this topic:
 
-*"Give me a set of questions someone might ask in an interview or technical discussion about [topic]."*
+_"Give me a set of questions someone might ask in an interview or technical discussion about [topic]."_
 
 Then work through them one by one. For each answer the AI gives, push back and ask follow-ups. In my experience, AI handles conceptual material at roughly undergraduate difficulty without hallucinating, so this is a reliable way to build fluency.
 
-**Example scenario prompt:** *"For a developing economy, how would you assess whether its debt level is sustainable?"*
+**Example scenario prompt:** _"For a developing economy, how would you assess whether its debt level is sustainable?"_
 
 ---
 

@@ -54,7 +54,9 @@
     <li class="{% if page.url contains 'getting-started' %}toc-active{% endif %}">
       <a href="/code-agent/getting-started/">1. Getting Started</a>
     </li>
-    <li class="{% if page.url contains '/workflow' or page.url contains 'what-works' or page.url contains 'sample-workflow' or page.url contains 'how-to-learn' %}toc-active{% endif %}">
+    <li
+      class="{% if page.url contains '/workflow' or page.url contains 'what-works' or page.url contains 'sample-workflow' or page.url contains 'how-to-learn' %}toc-active{% endif %}"
+    >
       <a href="/code-agent/workflow/">2. A Typical Workflow</a>
       <ul>
         <li class="{% if page.url contains 'what-works' %}toc-active{% endif %}">
