@@ -1,5 +1,8 @@
 name: Docker Slim
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 #Only trigger, when the build workflow succeeded
 on:
   push:
