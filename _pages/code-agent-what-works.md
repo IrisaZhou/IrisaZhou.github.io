@@ -14,16 +14,17 @@ _styles: >
 
 ## Do's
 
-1. Use sequence words.
+1. Use sequence words:
 
-- do this, then that
-- 1, 2, 3
-- The key is to directly tell the AI where the task boundaries are.
+- "Do this, then that" 
+- Use numbered list: 1, 2, 3
 
-2. At the start of each session, explicitly ask it to read `CLAUDE.md`, `codex.md`, or `AGENTS.md`.
+The key is to directly tell the AI where the task boundaries are.
+
+2. At the start of each session, explicitly ask it to read `CLAUDE.md`, `CODEX.md`, or `AGENTS.md`.
    <small class="text-muted">Although it says it will automatically read, my experience is that sometimes it randomly stops reading it.</small>
 
-3. Read the state your code agent tells you.
+3. Read the "state" your code agent tells you.
 
 - check what it says it is doing
 - interrupt early if it goes off in a weird direction
