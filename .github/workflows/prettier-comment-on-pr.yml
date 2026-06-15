@@ -1,7 +1,7 @@
 name: Prettier comment on PR
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 on:
   repository_dispatch:
@@ -20,4 +20,4 @@ jobs:
           message: |
             Failed [prettier code check](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.event.client_payload.run_id }}). Check [this file](${{ github.event.client_payload.artifact_url }}) for more information.
   env:
-    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"

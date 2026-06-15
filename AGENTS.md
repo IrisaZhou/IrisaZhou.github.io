@@ -51,6 +51,11 @@ Before every commit, you **must** run these steps:
     # Check navigation, pages, images, and dark mode.
     ```
 
+    After any edit, also run `npx prettier . --check` and fix every warning before
+    considering the change done. The CI formatting job commonly catches files like
+    `_pages/code-agent-what-works.md` and the workflow YAMLs here, so treat a
+    Prettier warning as a required follow-up.
+
 ## Critical Configuration
 
 When modifying `_config.yml`, these **must be updated together**:

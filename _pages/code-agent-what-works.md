@@ -16,7 +16,7 @@ _styles: >
 
 1. Use sequence words:
 
-- "Do this, then that" 
+- "Do this, then that"
 - Use numbered list: 1, 2, 3
 
 The key is to directly tell the AI where the task boundaries are.

@@ -2,7 +2,7 @@
 name: Update TOCs
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 # This workflow automatically updates the Table of Contents (TOC) in markdown files
 
 on:
