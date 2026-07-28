@@ -35,7 +35,7 @@ Questions that interest me:
 - How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?
 
 You can find my CV
-[here](https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf).
+[here](https://www.irisazhou.com/papers/CV_Irisa_Zhou_public.pdf).
 
 **Research Interests:** Macro, Labor, Education, AI
 
