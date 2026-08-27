@@ -95,4 +95,4 @@ If you are not sure, use `mv` to move the file to a temporary folder instead of 
 
 ---
 
-← [Back to Getting Started with Code Agents for Junior Economists](/teaching/code-agents/)
+← [Back to Getting Started with Code Agents for Junior Economists](/code-agent/getting-started/)

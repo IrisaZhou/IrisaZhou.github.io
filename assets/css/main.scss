@@ -1,42 +1,476 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-/* Built-in Sass modules you’ll likely use across partials */
-@use "sass:math";
-@use "sass:string";
+:root {
+  color-scheme: light;
+  --bg: #fff;
+  --surface: #f7f7f7;
+  --text: #222;
+  --muted: #666;
+  --border: #dedede;
+  --accent: #2a7a5a;
+  --code: #f3f3f3;
+  --max-width: 930px;
+}
 
-/* Configure your design tokens BEFORE loading any of your partials.
-   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
-@use "variables" with (
-  $max-content-width: {{ site.max_width | default:  "930px" }}
-);
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #171717;
+  --surface: #222;
+  --text: #e8e8e8;
+  --muted: #aaa;
+  --border: #444;
+  --accent: #72c69e;
+  --code: #252525;
+}
 
-/* Your project partials — convert these files to `@use "variables";`
-   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
-@use "themes";
-@use "layout";
+* {
+  box-sizing: border-box;
+}
 
-// Core styles organized by usage
-@use "typography";
-@use "navbar";
-@use "footer";
-@use "blog";
-@use "publications";
-@use "components";
-@use "utilities";
+html {
+  scroll-behavior: smooth;
+}
 
-// Other specialized styles
-@use "distill";
-@use "cv";
-@use "tabs";
-@use "teachings";
-@use "typograms";
-@use "font-awesome/fontawesome";
-@use "font-awesome/brands";
-@use "font-awesome/solid";
-@use "font-awesome/regular";
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+}
 
-// Site-specific customizations
-@use "custom";
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#main-content {
+  min-height: calc(100vh - 9rem);
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  min-height: 4rem;
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-right: auto;
+}
+
+.site-links {
+  align-items: center;
+  display: flex;
+  gap: 1.35rem;
+}
+
+.site-links a {
+  color: var(--muted);
+}
+
+.site-links a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.menu-button,
+.theme-button {
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+}
+
+.menu-button {
+  display: none;
+}
+
+.theme-button {
+  font-size: 1.2rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin-top: 2.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.description,
+.text-muted,
+.paper-authors,
+.paper-meta {
+  color: var(--muted) !important;
+}
+
+.about::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.profile {
+  float: left;
+  margin: 0 2.5rem 1.5rem 0;
+  text-align: center;
+  width: 205px;
+}
+
+.profile img {
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.8rem 0 0.2rem;
+}
+
+.profile-uni {
+  font-size: 0.9rem;
+}
+
+.profile-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.profile-icons i {
+  display: none;
+}
+
+.profile-icons a::after {
+  color: var(--text);
+}
+
+.profile-icons a[title="Email"]::after {
+  content: "Email";
+}
+
+.profile-icons a[title="GitHub"]::after {
+  content: "GitHub";
+}
+
+.profile-icons a[title="LinkedIn"]::after {
+  content: "LinkedIn";
+}
+
+.cv-link {
+  border: 1px solid var(--text);
+  border-radius: 3px;
+  color: var(--text);
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+
+.research-section-header {
+  border-bottom: 2px solid var(--text);
+  font-size: 1.25rem;
+  padding-bottom: 0.4rem;
+}
+
+.paper-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+  margin: 1.8rem 0;
+}
+
+.paper-figure {
+  flex: 0 0 210px;
+}
+
+.paper-info {
+  flex: 1;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.paper-authors,
+.paper-meta {
+  font-size: 0.95rem;
+  margin: 0.15rem 0;
+}
+
+.paper-abstract {
+  margin: 0.75rem 0;
+}
+
+.paper-abstract summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.abstract-body {
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+}
+
+.paper-links {
+  margin-top: 0.7rem;
+}
+
+.paper-btn,
+.btn {
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  color: var(--text);
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+}
+
+.paper-divider,
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.row {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 3fr) minmax(180px, 1fr);
+}
+
+.claude-code-toc {
+  border-left: 3px solid var(--border);
+  font-size: 0.85rem;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding: 1rem 1rem 1rem 1.25rem;
+  position: sticky;
+  top: 80px;
+}
+
+.claude-code-toc .toc-title {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.claude-code-toc ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.claude-code-toc ul ul {
+  margin-top: 0.3rem;
+  padding-left: 0.75rem;
+}
+
+.claude-code-toc li {
+  margin-bottom: 0.45rem;
+}
+
+.claude-code-toc a {
+  color: var(--muted);
+}
+
+.claude-code-toc .toc-active > a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.alert {
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+}
+
+.alert-danger {
+  border-color: #a52a2a;
+}
+
+.guide-outline {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.list-group-item {
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  color: var(--text);
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.list-group-item:hover {
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.guide-num {
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-width: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  display: block;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--surface);
+}
+
+pre {
+  background: var(--code);
+  border-radius: 4px;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+code {
+  background: var(--code);
+  border-radius: 3px;
+  padding: 0.1rem 0.25rem;
+}
+
+pre code {
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  #main-content {
+    padding-top: 2rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .site-links {
+    align-items: stretch;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    left: 0;
+    padding: 1rem 1.25rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+  }
+
+  .site-links.open {
+    display: flex;
+  }
+
+  .theme-button {
+    text-align: left;
+  }
+
+  .profile {
+    float: none;
+    margin: 0 auto 2rem;
+    width: min(260px, 80%);
+  }
+
+  .paper-row {
+    flex-direction: column;
+  }
+
+  .paper-figure {
+    flex-basis: auto;
+    max-width: 260px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .d-none {
+    display: none;
+  }
+}

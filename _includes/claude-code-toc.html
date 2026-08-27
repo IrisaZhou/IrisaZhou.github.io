@@ -1,56 +1,7 @@
-<style>
-  .claude-code-toc {
-    position: sticky;
-    top: 80px;
-    padding: 1rem 1rem 1rem 1.25rem;
-    border-left: 3px solid #dee2e6;
-    font-size: 0.85rem;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-  }
-  .claude-code-toc .toc-title {
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-    color: #6c757d;
-    text-transform: uppercase;
-  }
-  .claude-code-toc ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .claude-code-toc > ul > li {
-    margin-bottom: 0.6rem;
-  }
-  .claude-code-toc ul ul {
-    padding-left: 0.75rem;
-    margin-top: 0.3rem;
-  }
-  .claude-code-toc ul ul li {
-    margin-bottom: 0.3rem;
-  }
-  .claude-code-toc a {
-    color: #495057;
-    text-decoration: none;
-    line-height: 1.4;
-  }
-  .claude-code-toc a:hover {
-    color: var(--global-theme-color, #4a7c9e);
-  }
-  .claude-code-toc .toc-active > a {
-    font-weight: 600;
-    color: var(--global-theme-color, #4a7c9e);
-  }
-</style>
-
-<nav class="claude-code-toc">
+<nav class="claude-code-toc" aria-label="Code agent guide">
   <div class="toc-title">Code Agent Guide</div>
   <ul>
-    <li class="{% if page.url == '/code-agent/' %}toc-active{% endif %}">
-      <a href="/code-agent/">Overview</a>
-    </li>
+    <li class="{% if page.url == '/code-agent/' %}toc-active{% endif %}"><a href="/code-agent/">Overview</a></li>
     <li class="{% if page.url contains 'getting-started' %}toc-active{% endif %}">
       <a href="/code-agent/getting-started/">1. Getting Started</a>
     </li>
@@ -89,8 +40,6 @@
         </li>
       </ul>
     </li>
-    <li class="{% if page.url contains 'saving-tokens' %}toc-active{% endif %}">
-      <a href="/code-agent/saving-tokens/">5. Saving Tokens</a>
-    </li>
+    <li class="{% if page.url contains 'saving-tokens' %}toc-active{% endif %}"><a href="/code-agent/saving-tokens/">5. Saving Tokens</a></li>
   </ul>
 </nav>
