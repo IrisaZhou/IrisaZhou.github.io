@@ -22,7 +22,6 @@ hide_header: true
 selected_papers: false
 social: false
 ---
-
 WELCOME!
 
 I am Irisa Zhou, a Visiting Assistant Professor of Economics at Indiana University, Bloomington. My research understands how microeconomic constraints shape
@@ -34,7 +33,7 @@ Questions that interest me:
 - How do innate advantages (such as socio-economic endowments or prior accumulation upon shocks) scale up to influence the aggregate economy?
 
 You can find my CV
-[here](https://www.irisazhou.com/papers/CV_Irisa_Zhou_public.pdf).
+[here](https://www.irisazhou.com/papers/CV_public.pdf).
 
 **Research Interests:** Macro, Labor, Education, AI
 
