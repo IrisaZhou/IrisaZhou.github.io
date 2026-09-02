@@ -41,4 +41,4 @@ You can find my CV
 &nbsp;&nbsp;|&nbsp;&nbsp;
 [irisa.x.zhou@gmail.com](mailto:irisa.x.zhou@gmail.com)
 
-**Update:** [Sharing my own code agent experience →](/code-agent/)
+**Update 09/02:** [Saving Tokens in My Process →](/code-agent/saving-tokens/)

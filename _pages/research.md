@@ -7,13 +7,13 @@ nav_order: 2
 _styles: >
   .post-header { display: none; }
 ---
-
 <h2 class="research-section-header">Working Papers</h2>
 
 <!-- ══════════════════════════════════════════════════════════════════
      Paper 1 — Learning the Major-Industry Mismatch (JMP)
      Figure:  place your image at  assets/img/papers/jmp-figure.png
      ══════════════════════════════════════════════════════════════════ -->
+
 <div class="paper-row">
   <div class="paper-figure">
     <img
@@ -69,10 +69,62 @@ _styles: >
 
 <hr class="paper-divider" />
 
+<div class="paper-row">
+  <div class="paper-figure">
+    <img
+      src="/assets/img/papers/housing-figure.png"
+      alt="Searching in the Housing Market figure"
+      data-zoomable
+      style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
+    />
+  </div>
+  <div class="paper-info">
+    <p class="paper-title">
+      Searching in the Housing Market with Non-Committed Prices
+    </p>
+    <p class="paper-meta">Updated Draft: April 2026</p>
+    <p class="paper-meta">
+      Presented at: CEA (2024), University of Toronto (2023)
+    </p>
+    <details class="paper-abstract">
+      <summary>Abstract</summary>
+      <div class="abstract-body">
+        This paper develops an equilibrium theory of matching between buyers and
+        sellers in the real estate market, especially investigating how partially
+        committed asking prices respond to the pool of prospective buyers
+        associated with each good. Buyers with heterogeneous financial abilities
+        visit based on expected gain, suggesting that the pool of prospective
+        buyers faced by the sellers depends on expected competition induced by
+        the asking price. In a search market with asking prices, I show
+        analytically that sellers optimally post lower asking prices when the
+        targeted market is more competitive. I also show that the model-predicted
+        sale-over-asking ratio is consistent with the empirically observed
+        evidence from the Toronto real estate market.
+      </div>
+    </details>
+    <div class="paper-links">
+      <a
+        href="https://irisazhou.github.io/papers/AskingPriceWP.pdf"
+        target="_blank"
+        class="paper-btn"
+        >PDF</a
+      >
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════════════════════════════════
      Paper 2 — AI and Returns to Experience in Entrepreneurship
      Figure:  place your image at  assets/img/papers/ai-figure.png
      ══════════════════════════════════════════════════════════════════ -->
+
+<hr class="paper-divider" />
+
+<!-- ══════════════════════════════════════════════════════════════════
+     Paper 3 — Searching in the Housing Market
+     Figure:  place your image at  assets/img/papers/housing-figure.png
+     ══════════════════════════════════════════════════════════════════ -->
+
 <div class="paper-row">
   <div class="paper-figure">
     <img
@@ -119,61 +171,12 @@ _styles: >
   </div>
 </div>
 
-<hr class="paper-divider" />
-
-<!-- ══════════════════════════════════════════════════════════════════
-     Paper 3 — Searching in the Housing Market
-     Figure:  place your image at  assets/img/papers/housing-figure.png
-     ══════════════════════════════════════════════════════════════════ -->
-<div class="paper-row">
-  <div class="paper-figure">
-    <img
-      src="/assets/img/papers/housing-figure.png"
-      alt="Searching in the Housing Market figure"
-      data-zoomable
-      style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
-    />
-  </div>
-  <div class="paper-info">
-    <p class="paper-title">
-      Searching in the Housing Market with Non-Committed Prices
-    </p>
-    <p class="paper-meta">Updated Draft: April 2026</p>
-    <p class="paper-meta">
-      Presented at: CEA (2024), University of Toronto (2023)
-    </p>
-    <details class="paper-abstract">
-      <summary>Abstract</summary>
-      <div class="abstract-body">
-        This paper develops an equilibrium theory of matching between buyers and
-        sellers in the real estate market, especially investigating how partially
-        committed asking prices respond to the pool of prospective buyers
-        associated with each good. Buyers with heterogeneous financial abilities
-        visit based on expected gain, suggesting that the pool of prospective
-        buyers faced by the sellers depends on expected competition induced by
-        the asking price. In a search market with asking prices, I show
-        analytically that sellers optimally post lower asking prices when the
-        targeted market is more competitive. I also show that the model-predicted
-        sale-over-asking ratio is consistent with the empirically observed
-        evidence from the Toronto real estate market.
-      </div>
-    </details>
-    <div class="paper-links">
-      <a
-        href="https://irisazhou.github.io/papers/AskingPriceWP.pdf"
-        target="_blank"
-        class="paper-btn"
-        >PDF</a
-      >
-    </div>
-  </div>
-</div>
-
 <h2 class="research-section-header">Work in Progress</h2>
 
 <!-- ══════════════════════════════════════════════════════════════════
      Paper 4 — Safety Net or Trap (no figure)
      ══════════════════════════════════════════════════════════════════ -->
+
 <div class="paper-row">
   <div class="paper-info">
     <p class="paper-title">
