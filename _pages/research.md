@@ -7,6 +7,7 @@ nav_order: 2
 _styles: >
   .post-header { display: none; }
 ---
+
 <h2 class="research-section-header">Working Papers</h2>
 
 <!-- ══════════════════════════════════════════════════════════════════

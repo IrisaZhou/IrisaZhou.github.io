@@ -49,11 +49,11 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </div>
 
-  <a href="/code-agent/comparing-agents/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+  <a href="/code-agent/comparing-copilot-claude-codex/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">3</span>
     <div>
       <strong>Comparing Across Agents & Chat Interfaces</strong><br>
-      <small class="text-muted">Copilot vs. Claude vs. Codex · Gemini vs. ChatGPT vs. Claude</small>
+      <small class="text-muted">Copilot vs. Claude vs. Codex</small>
     </div>
   </a>
 
