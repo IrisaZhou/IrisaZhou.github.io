@@ -20,14 +20,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
           bundler-cache: true
+      - uses: astral-sh/setup-uv@v7
       - run: JEKYLL_ENV=production bundle exec jekyll build
+      - name: Export read-only marimo notebooks
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mapfile -d '' notebooks < <(find apps -type f -name '*.py' -print0 | sort -z)
+          if (( ${#notebooks[@]} == 0 )); then
+            echo "No marimo notebooks found under apps/."
+            exit 1
+          fi
+
+          for notebook in "${notebooks[@]}"; do
+            relative_path="${notebook#apps/}"
+            output_path="_site/assets/marimo/${relative_path%.py}"
+            echo "Exporting ${notebook} to ${output_path}"
+            uvx marimo==0.24.0 export html-wasm --sandbox \
+              "${notebook}" -o "${output_path}" --mode run
+          done
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
