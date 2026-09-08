@@ -22,4 +22,12 @@ npx prettier . --check
 docker compose run --rm site bundle exec jekyll build
 ```
 
-For local preview, run `docker compose up --build` and open <http://localhost:8080>.
+Remember, if you are on windows PC and cannot find npx:
+
+```Shell
+PS C:\Users\izhou\Documents\IrisaZhou.github.io> where.exe npx
+C:\Users\izhou\node-v24.20.0-win-x64\npx
+C:\Users\izhou\node-v24.20.0-win-x64\npx.cmd
+```
+
+For local preview, run `docker compose up --build` and open [http://localhost:8080](http://localhost:8080).
