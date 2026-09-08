@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- Preload is necessary because we show these images when we disconnect from the server,
+    but at that point we cannot load these images from the server -->
+    <link rel="preload" href="./assets/gradient-yHQUC_QB.png" as="image" />
+    <link rel="preload" href="./assets/noise-60BoTA8O.png" as="image" />
+    <!-- Preload the fonts -->
+    <link rel="preload" href="./assets/Lora-VariableFont_wght-CZceb_kH.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/PTSans-Regular-Bam3NpBI.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/PTSans-Bold-C_DwAp7Z.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Regular-CEsLFVD9.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Medium-D5MAsWEG.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/FiraMono-Bold-C6PDArdf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="a marimo app" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <script data-marimo="true">
+      function __resizeIframe(obj) {
+        const scrollbarHeight = 20; // Max between windows, mac, and linux
+
+        function setHeight() {
+          // Guard against race condition where iframe isn't ready
+          if (!obj.contentWindow?.document?.documentElement) {
+            return;
+          }
+          const element = obj.contentWindow.document.documentElement;
+          // If there is no vertical scrollbar, we don't need to resize the iframe
+          if (element.scrollHeight === element.clientHeight) {
+            return;
+          }
+
+          // Create a new height that includes the scrollbar height if it's visible
+          const hasHorizontalScrollbar = element.scrollWidth > element.clientWidth;
+          const newHeight = element.scrollHeight + (hasHorizontalScrollbar ? scrollbarHeight : 0);
+
+          // Only update the height if it's different from the current height
+          if (obj.style.height !== `${newHeight}px`) {
+            obj.style.height = `${newHeight}px`;
+          }
+        }
+
+        // Resize the iframe to the height of the content and bottom scrollbar height
+        setHeight();
+
+        // Resize the iframe when the content changes
+        const resizeObserver = new ResizeObserver((_entries) => {
+          setHeight();
+        });
+        // Only observe if iframe content is ready
+        if (obj.contentWindow?.document?.body) {
+          resizeObserver.observe(obj.contentWindow.document.body);
+        }
+      }
+    </script>
+    <marimo-filename hidden>notebook.py</marimo-filename>
+    <!-- TODO(Trevor): Legacy, required by VS Code plugin. Remove when plugin is updated (see marimo/server/_templates/template.py) -->
+    <marimo-version data-version="{{ version }}" hidden></marimo-version>
+    <marimo-user-config data-config="{{ user_config }}" hidden></marimo-user-config>
+    <marimo-server-token data-token="{{ server_token }}" hidden></marimo-server-token>
+    <!-- /TODO -->
+    <title>AR1-class-notes</title>
+    <script type="module" crossorigin src="./assets/index-C5WESBbZ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-BPPi7vOr.js">
+    <link rel="modulepreload" crossorigin href="./assets/objects-CrbstYTV.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-C4rtOYze.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-C60yClUi.js">
+    <link rel="modulepreload" crossorigin href="./assets/compiler-runtime-DnimoHo0.js">
+    <link rel="modulepreload" crossorigin href="./assets/jsx-runtime-3wZU7vFS.js">
+    <link rel="modulepreload" crossorigin href="./assets/useEventListener-DpNnLPuE.js">
+    <link rel="modulepreload" crossorigin href="./assets/defaultLocale-CGJY8D9C.js">
+    <link rel="modulepreload" crossorigin href="./assets/precisionRound-DQz5N1zm.js">
+    <link rel="modulepreload" crossorigin href="./assets/defaultLocale-DzliDDTm.js">
+    <link rel="modulepreload" crossorigin href="./assets/vega-loader.browser-DLY285WP.js">
+    <link rel="modulepreload" crossorigin href="./assets/tooltip-BUmTS76K.js">
+    <link rel="modulepreload" crossorigin href="./assets/clsx-Dz_KRrWq.js">
+    <link rel="modulepreload" crossorigin href="./assets/cn-DCUzRj2J.js">
+    <link rel="modulepreload" crossorigin href="./assets/badge-D28DMr4y.js">
+    <link rel="modulepreload" crossorigin href="./assets/button-W__YVea9.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-Ba2zmJWD.js">
+    <link rel="modulepreload" crossorigin href="./assets/fullscreen-CrevbcR_.js">
+    <link rel="modulepreload" crossorigin href="./assets/menu-items-B8lIBnFI.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CFnrytEJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/createLucideIcon-B8oVfJNp.js">
+    <link rel="modulepreload" crossorigin href="./assets/check-CyyJPf_5.js">
+    <link rel="modulepreload" crossorigin href="./assets/x-4y-nyVDU.js">
+    <link rel="modulepreload" crossorigin href="./assets/select-CPo-KTTe.js">
+    <link rel="modulepreload" crossorigin href="./assets/tooltip-C9LWGQ7Y.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-toast-DjpWVza6.js">
+    <link rel="modulepreload" crossorigin href="./assets/useEvent-GCVIknuR.js">
+    <link rel="modulepreload" crossorigin href="./assets/invariant-BUdrueMv.js">
+    <link rel="modulepreload" crossorigin href="./assets/isObject-DvLSfCY5.js">
+    <link rel="modulepreload" crossorigin href="./assets/isArrayLikeObject-Dqg6_6m7.js">
+    <link rel="modulepreload" crossorigin href="./assets/_initCloneObject-7OOScFCJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/merge-BK1opWhR.js">
+    <link rel="modulepreload" crossorigin href="./assets/zod-BIDX-mZr.js">
+    <link rel="modulepreload" crossorigin href="./assets/utils-C8Yt16Y7.js">
+    <link rel="modulepreload" crossorigin href="./assets/constants-DifUxsbZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/session-D-SddyN0.js">
+    <link rel="modulepreload" crossorigin href="./assets/Deferred-CP7vq682.js">
+    <link rel="modulepreload" crossorigin href="./assets/config-EoJoeZuK.js">
+    <link rel="modulepreload" crossorigin href="./assets/uuid-e9lSomwA.js">
+    <link rel="modulepreload" crossorigin href="./assets/DeferredRequestRegistry-6TRSC3VZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/requests-B9zEd_sW.js">
+    <link rel="modulepreload" crossorigin href="./assets/useLifecycle-DDwuYzlC.js">
+    <link rel="modulepreload" crossorigin href="./assets/useNonce-C2dwX-sI.js">
+    <link rel="modulepreload" crossorigin href="./assets/useTheme-CwCyrmDf.js">
+    <link rel="modulepreload" crossorigin href="./assets/arrays-UzzAzxsG.js">
+    <link rel="modulepreload" crossorigin href="./assets/strings-DmKKoXrM.js">
+    <link rel="modulepreload" crossorigin href="./assets/once-DNBWPkeJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/capabilities-CHeZxy51.js">
+    <link rel="modulepreload" crossorigin href="./assets/createReducer-C1MhlItJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/paths-D5zczhUD.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-CeF1Em5L.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Di6rD-vJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-DanVWUek.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-BVNaV53g.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-BrqkjqDe.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-5bwTcyKs.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-BPoMypmC.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Bm9PT5P9.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-BbqPy6oS.js">
+    <link rel="modulepreload" crossorigin href="./assets/stex-BGrE-q7N.js">
+    <link rel="modulepreload" crossorigin href="./assets/toDate-QOk09NqD.js">
+    <link rel="modulepreload" crossorigin href="./assets/purify.es-Bwm8T4QC.js">
+    <link rel="modulepreload" crossorigin href="./assets/cjs-DCKmcMBz.js">
+    <link rel="modulepreload" crossorigin href="./assets/isSymbol-BT6B8Bon.js">
+    <link rel="modulepreload" crossorigin href="./assets/now-CsYTPAhW.js">
+    <link rel="modulepreload" crossorigin href="./assets/debounce-DhnxH9Rh.js">
+    <link rel="modulepreload" crossorigin href="./assets/database-zap-n8PGHE18.js">
+    <link rel="modulepreload" crossorigin href="./assets/cells-DTFqEQb0.js">
+    <link rel="modulepreload" crossorigin href="./assets/kbd-PEowR7op.js">
+    <link rel="modulepreload" crossorigin href="./assets/useInstallPackage-D58nBaNf.js">
+    <link rel="modulepreload" crossorigin href="./assets/alert-dialog-D_kB5FIu.js">
+    <link rel="modulepreload" crossorigin href="./assets/dialog-WU4x2UpK.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDebounce-BlgD22u_.js">
+    <link rel="modulepreload" crossorigin href="./assets/numbers-DtSpUdpO.js">
+    <link rel="modulepreload" crossorigin href="./assets/SSRProvider-CouFQxI2.js">
+    <link rel="modulepreload" crossorigin href="./assets/context-BJMN4ll3.js">
+    <link rel="modulepreload" crossorigin href="./assets/useNumberFormatter-xxZlcf11.js">
+    <link rel="modulepreload" crossorigin href="./assets/usePress-Bl6X9B5M.js">
+    <link rel="modulepreload" crossorigin href="./assets/input-BN98e517.js">
+    <link rel="modulepreload" crossorigin href="./assets/ImperativeModal-Dxj31V4A.js">
+    <link rel="modulepreload" crossorigin href="./assets/cell-link-D26WjdN1.js">
+    <link rel="modulepreload" crossorigin href="./assets/config-DjP9S1hr.js">
+    <link rel="modulepreload" crossorigin href="./assets/alert-CHWQT4zh.js">
+    <link rel="modulepreload" crossorigin href="./assets/chevron-right-C9ZBG6Lx.js">
+    <link rel="modulepreload" crossorigin href="./assets/dropdown-menu-DWGvf_Bw.js">
+    <link rel="modulepreload" crossorigin href="./assets/links-BeU4kHTI.js">
+    <link rel="modulepreload" crossorigin href="./assets/useRunCells-BpZ_0Xuz.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-HCSOwOwk.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-DlR5UiIE.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-icon-Cn8LzPNx.js">
+    <link rel="modulepreload" crossorigin href="./assets/RenderHTML-X9kskQZ0.js">
+    <link rel="modulepreload" crossorigin href="./assets/datasource-DZgUyqAK.js">
+    <link rel="modulepreload" crossorigin href="./assets/state-ByxLiTvP.js">
+    <link rel="modulepreload" crossorigin href="./assets/hat-glasses-xLTnAC_n.js">
+    <link rel="modulepreload" crossorigin href="./assets/package-ROei-DG7.js">
+    <link rel="modulepreload" crossorigin href="./assets/sparkles-DwqcWrJl.js">
+    <link rel="modulepreload" crossorigin href="./assets/MarimoErrorOutput-BVdFtnJz.js">
+    <link rel="modulepreload" crossorigin href="./assets/ErrorBoundary-B392qglD.js">
+    <link rel="modulepreload" crossorigin href="./assets/eye-off-DfXRjba3.js">
+    <link rel="modulepreload" crossorigin href="./assets/refresh-cw-DPUCy0Ep.js">
+    <link rel="modulepreload" crossorigin href="./assets/tree-actions-DUAdNn1i.js">
+    <link rel="modulepreload" crossorigin href="./assets/spinner-Cj3eM5bt.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-to-image-BsXiWo0v.js">
+    <link rel="modulepreload" crossorigin href="./assets/focus-BTlyH5K_.js">
+    <link rel="modulepreload" crossorigin href="./assets/useAsyncData-BcvSvTUt.js">
+    <link rel="modulepreload" crossorigin href="./assets/LazyAnyLanguageCodeMirror-DUvRReKp.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-space-D4wN6pqE.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-5FQGJX7Z-B4N_BMo6.js">
+    <link rel="modulepreload" crossorigin href="./assets/markdown-renderer-BjuEVUOa.js">
+    <link rel="modulepreload" crossorigin href="./assets/command-D5LtSvbN.js">
+    <link rel="modulepreload" crossorigin href="./assets/field-BPfggvql.js">
+    <link rel="modulepreload" crossorigin href="./assets/popover-B96fOqfH.js">
+    <link rel="modulepreload" crossorigin href="./assets/errors-D93OkQw8.js">
+    <link rel="modulepreload" crossorigin href="./assets/download-_oAlkvj6.js">
+    <link rel="modulepreload" crossorigin href="./assets/table-xPvP31p3.js">
+    <link rel="modulepreload" crossorigin href="./assets/useIframeCapabilities-DBacdN1t.js">
+    <link rel="modulepreload" crossorigin href="./assets/error-banner-d0-XOKtd.js">
+    <link rel="modulepreload" crossorigin href="./assets/formats-CydJsDOc.js">
+    <link rel="modulepreload" crossorigin href="./assets/utils-Y4n-X10o.js">
+    <link rel="modulepreload" crossorigin href="./assets/en-US-orJ4dPbF.js">
+    <link rel="modulepreload" crossorigin href="./assets/isValid-BmtlFqSa.js">
+    <link rel="modulepreload" crossorigin href="./assets/dates-CZTDC2tF.js">
+    <link rel="modulepreload" crossorigin href="./assets/extends-BiFDv3jB.js">
+    <link rel="modulepreload" crossorigin href="./assets/emotion-is-prop-valid.esm-C59xfSYt.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDateFormatter-Cxnn3tJh.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-icons.esm-CsgEZOQ_.js">
+    <link rel="modulepreload" crossorigin href="./assets/RSPContexts-oeZyXDWd.js">
+    <link rel="modulepreload" crossorigin href="./assets/table-FVnUU4--.js">
+    <link rel="modulepreload" crossorigin href="./assets/ellipsis-CUbXmdb-.js">
+    <link rel="modulepreload" crossorigin href="./assets/external-link-C8y9rFms.js">
+    <link rel="modulepreload" crossorigin href="./assets/message-circle-DJwyqZtq.js">
+    <link rel="modulepreload" crossorigin href="./assets/plus-r1QITpsJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/trash-2-BLxp8uxj.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-resizable-panels.browser.esm-CLaR27oP.js">
+    <link rel="modulepreload" crossorigin href="./assets/JsonOutput-DnrBQBRT.js">
+    <link rel="modulepreload" crossorigin href="./assets/chart-no-axes-column-eb23KpAk.js">
+    <link rel="modulepreload" crossorigin href="./assets/square-function-ypIvDL4C.js">
+    <link rel="modulepreload" crossorigin href="./assets/spec-NeCHOv2Z.js">
+    <link rel="modulepreload" crossorigin href="./assets/column-preview-BLap3eAk.js">
+    <link rel="modulepreload" crossorigin href="./assets/icons-BwSNDWAP.js">
+    <link rel="modulepreload" crossorigin href="./assets/radio-group-5KDs5aO1.js">
+    <link rel="modulepreload" crossorigin href="./assets/floating-outline-Vqr5D17R.js">
+    <link rel="modulepreload" crossorigin href="./assets/switch-CDT2KH2g.js">
+    <link rel="modulepreload" crossorigin href="./assets/objectWithoutPropertiesLoose-DfWeGRFv.js">
+    <link rel="modulepreload" crossorigin href="./assets/esm-RBKN8Dn2.js">
+    <link rel="modulepreload" crossorigin href="./assets/readonly-python-code-BV8otm7e.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-headphone-BjKz3ZV1.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-BjlLTeSV.js">
+    <link rel="modulepreload" crossorigin href="./assets/image-Dvcyi0uu.js">
+    <link rel="modulepreload" crossorigin href="./assets/file-icons-V3puz20c.js">
+    <link rel="modulepreload" crossorigin href="./assets/events-CPoJAfgx.js">
+    <link rel="modulepreload" crossorigin href="./assets/share-c5Zh8BM8.js">
+    <link rel="modulepreload" crossorigin href="./assets/blob-BKW9TqBu.js">
+    <link rel="modulepreload" crossorigin href="./assets/get-DuxuLRGI.js">
+    <link rel="modulepreload" crossorigin href="./assets/_baseSet-DehVzRp6.js">
+    <link rel="modulepreload" crossorigin href="./assets/state-Ci7n55A9.js">
+    <link rel="modulepreload" crossorigin href="./assets/label-BOFHwHn7.js">
+    <link rel="modulepreload" crossorigin href="./assets/form-Bb1JVuzT.js">
+    <link rel="modulepreload" crossorigin href="./assets/textarea-Bn1AMfsk.js">
+    <link rel="modulepreload" crossorigin href="./assets/refresh-ccw-neWzNbg7.js">
+    <link rel="modulepreload" crossorigin href="./assets/form-CRSnWxLR.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderShortcut-C6HKXhBl.js">
+    <link rel="modulepreload" crossorigin href="./assets/useBoolean-CgN_4RAl.js">
+    <link rel="modulepreload" crossorigin href="./assets/markdown-export-D-ZHIs71.js">
+    <link rel="modulepreload" crossorigin href="./assets/useDeepCompareMemoize-CbFVGT0j.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-D0D7HkQV.js">
+    <link rel="modulepreload" crossorigin href="./assets/semaphore-X3ApuO41.js">
+    <link rel="modulepreload" crossorigin href="./assets/fileToBase64-CBP8Y0AP.js">
+    <link rel="modulepreload" crossorigin href="./assets/pathUtils-BCwK34YQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/prop-types-BH1URye0.js">
+    <link rel="modulepreload" crossorigin href="./assets/es-dmMPFhRH.js">
+    <link rel="modulepreload" crossorigin href="./assets/_hasPath-D0QK37mF.js">
+    <link rel="modulepreload" crossorigin href="./assets/hasIn-DrYqVooW.js">
+    <link rel="modulepreload" crossorigin href="./assets/pick-Q2hMHnmn.js">
+    <link rel="modulepreload" crossorigin href="./assets/code-xml-COekUbUT.js">
+    <link rel="modulepreload" crossorigin href="./assets/globe-C2tUp3NL.js">
+    <link rel="modulepreload" crossorigin href="./assets/square-DVd8Y612.js">
+    <link rel="modulepreload" crossorigin href="./assets/triangle-alert-DGiOSARf.js">
+    <link rel="modulepreload" crossorigin href="./assets/bundle.esm-DTvm8QXy.js">
+    <link rel="stylesheet" crossorigin href="./assets/cells-BE1kpmPF.css">
+    <link rel="stylesheet" crossorigin href="./assets/markdown-renderer-DdDKmWlR.css">
+    <link rel="stylesheet" crossorigin href="./assets/JsonOutput-BQtz7-np.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-WoaGtlKd.css">
+  <marimo-wasm hidden=""></marimo-wasm>
+    <script>
+        if (window.location.protocol === 'file:') {
+            alert('Warning: This file must be served by an HTTP server to function correctly.');
+        }
+    </script>
+    
+    <style>
+        #save-button {
+            display: none !important;
+        }
+        #filename-input {
+            display: none !important;
+        }
+    </style>
+    
+<script data-marimo="true">
+    Object.defineProperty(window, "__MARIMO_EXPORT_CONTEXT__", {
+        value: Object.freeze({
+            trusted: true,
+            notebookCode: "# /// script\n# requires-python = \"\u003E=3.11\"\n# dependencies = [\n#     \"marimo\u003E=0.15.0\",\n#     \"matplotlib\u003E=3.8.0\",\n#     \"numpy\u003E=2.0.0\",\n#     \"pandas\u003E=2.2.0\",\n#     \"statsmodels\u003E=0.14.0\",\n# ]\n# ///\n\nimport marimo\n\n__generated_with = \"0.24.0\"\napp = marimo.App(width=\"medium\")\n\n\n@app.cell\ndef _():\n    import marimo as mo\n\n    return (mo,)\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    # Forecasting with AR and MA Models\n\n    We first use a simulation to build intuition for persistence and mean\n    reversion. We then apply the four steps from the **Estimating an AR(1)**\n    slide to annual GDP growth.\n    \"\"\")\n    return\n\n\n@app.cell(hide_code=True)\ndef _(mo):\n    mo.md(r\"\"\"\n    Note: This notebook is in **Marimo** format. Variables beginning with an\n    underscore are local to their cell and are not saved in the notebook's\n    namespace.\n    \"\"\")\n    return\n\n\n@app.cell\ndef _():\n    from pathlib import Path\n\n    import matplotlib.pyplot as plt\n    import numpy as np\n    import pandas as pd\n    from statsmodels.graphics.tsaplots import plot_acf\n    from statsmodels.tsa.stattools import adfuller\n\n    plt.style.use(\"seaborn-v0_8-whitegrid\")\n    return Path, adfuller, np, pd, plot_acf, plt\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ## 1. AR and MA models: persistence and mean reversion\n\n    The first-order autoregressive model is the special case $p=1$ of\n\n    $$\n    Y_t = c + \\sum_{j=1}^{p}\\frac{\\phi}{p}Y_{t-j} + \\varepsilon_t,\n    \\qquad E(\\varepsilon_t\\mid\\mathcal I_{t-1})=0.\n    $$\n\n    Set $p=1$ to recover the usual AR(1). The lag control below illustrates\n    an AR($p$) extension in which the total lag weight remains $\\phi$.\n    When $|\\phi|\u003C1$, its long-run mean is $\\mu=c/(1-\\phi)$.\n    \"\"\")\n    return\n\n\n@app.cell\ndef _(mo):\n    phi_slider = mo.ui.slider(\n        start=-1.5, stop=1.50, step=0.05, value=0.75,\n        label=r\"Persistence $\\phi$\", show_value=True,\n    )\n    ar_lags_slider = mo.ui.slider(\n        start=1, stop=5, step=1, value=1,\n        label=r\"Number of lags of $Y_t$ ($p$)\", show_value=True,\n    )\n    mo.hstack([phi_slider, ar_lags_slider])\n    return ar_lags_slider, phi_slider\n\n\n@app.cell\ndef _(ar_lags_slider, np, phi_slider, plt):\n    _rng = np.random.default_rng(402)\n    _periods = 120\n    _burn_in = 100\n    _c = 0.5\n    _phi = phi_slider.value\n    _p = ar_lags_slider.value\n    _simulated = np.empty(_periods + _burn_in + _p)\n    _simulated[:_p] = _c / (1 - _phi)\n    _shocks = _rng.normal(0, 1, size=_periods + _burn_in)\n    for _t in range(_p, len(_simulated)):\n        _simulated[_t] = _c + (_phi / _p) * _simulated[_t - _p:_t].sum() + _shocks[_t - _p]\n\n    _sample = _simulated[_burn_in + _p:]\n    _mean = _c / (1 - _phi)\n    _fig, _ax = plt.subplots(figsize=(10, 3.6))\n    _ax.plot(_sample, color=\"#006298\", linewidth=1.4)\n    _ax.axhline(_mean, color=\"#990000\", linestyle=\"--\", label=f\"Long-run mean = {_mean:.2f}\")\n    _ax.set(title=f\"Simulated AR({_p}), phi = {_phi:.2f}\", xlabel=\"Period\", ylabel=\"$Y_t$\")\n    _ax.legend()\n    _fig.tight_layout()\n    _fig\n    return\n\n\n@app.cell\ndef _(mo):\n    mo.callout(\n        mo.md(\n            \"Move the sliders. Set $p=1$ for the usual AR(1); larger values \"\n            \"include additional lags of $Y_t$. Positive values produce \"\n            \"persistence, while negative values produce alternating movements.\"\n        ),\n        kind=\"info\",\n    )\n    return\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ### MA(1): temporary effects of an innovation\n\n    A moving-average model expresses $Y_t$ as a function of current and past\n    innovations:\n\n    $$\n    Y_t = \\mu + \\varepsilon_t + \\theta\\sum_{j=1}^{q}\\varepsilon_{t-j}.\n    $$\n\n    Set $q=1$ to obtain the standard MA(1). Unlike an AR model, the effect of\n    a shock disappears after the selected number of innovation lags.\n    \"\"\")\n    return\n\n\n@app.cell\ndef _(mo):\n    theta_slider = mo.ui.slider(\n        start=-1.5, stop=1.5, step=0.05, value=0.75,\n        label=r\"Innovation coefficient $\\theta$\", show_value=True,\n    )\n    ma_lags_slider = mo.ui.slider(\n        start=1, stop=5, step=1, value=1,\n        label=r\"Number of lags of $\\varepsilon_t$ ($q$)\", show_value=True,\n    )\n    mo.hstack([theta_slider, ma_lags_slider])\n    return ma_lags_slider, theta_slider\n\n\n@app.cell\ndef _(ma_lags_slider, np, plt, theta_slider):\n    _rng = np.random.default_rng(402)\n    _periods = 120\n    _burn_in = 10\n    _mu = 0.0\n    _theta = theta_slider.value\n    _q = ma_lags_slider.value\n    _shocks = _rng.normal(0, 1, size=_periods + _burn_in + _q)\n    _simulated = np.empty(_periods + _burn_in)\n    for _t in range(_periods + _burn_in):\n        _simulated[_t] = _mu + _shocks[_t + _q] + _theta * _shocks[_t:_t + _q].sum()\n\n    _sample = _simulated[_burn_in:]\n    _fig, _ax = plt.subplots(figsize=(10, 3.6))\n    _ax.plot(_sample, color=\"#006298\", linewidth=1.4)\n    _ax.axhline(_mu, color=\"#990000\", linestyle=\"--\", label=f\"Mean = {_mu:.2f}\")\n    _ax.set(title=f\"Simulated MA({_q}), theta = {_theta:.2f}\", xlabel=\"Period\", ylabel=\"$Y_t$\")\n    _ax.legend()\n    _fig.tight_layout()\n    _fig\n    return\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ## 2. GDP levels versus annual GDP growth\n\n    We use the annual `FYGDP` series in `FYGDP.csv`. The GDP level trends over\n    time, so we study its annual log growth rate:\n\n    $$\n    y_t = 100\\,[\\log(FYGDP_t)-\\log(FYGDP_{t-1})].\n    $$\n    \"\"\")\n    return\n\n\n@app.cell\ndef _(mo, pd):\n    data_path = mo.notebook_location() / \"public\" / \"FYGDP.csv\"\n    gdp = pd.read_csv(str(data_path), parse_dates=[\"observation_date\"])\n    gdp = gdp.rename(columns={\"observation_date\": \"date\"}).sort_values(\"date\")\n    gdp = gdp.reset_index(drop=True)\n    gdp\n    return (gdp,)\n\n\n@app.cell\ndef _(gdp, np, plt):\n    gdp_analysis = gdp.assign(y=100 * np.log(gdp[\"FYGDP\"]).diff())\n\n    _fig, (_ax1, _ax2) = plt.subplots(2, 1, figsize=(10, 7), sharex=True)\n    _ax1.plot(gdp_analysis[\"date\"], gdp_analysis[\"FYGDP\"], color=\"#006298\")\n    _ax1.set(title=\"Annual GDP level\", ylabel=\"FYGDP\")\n    _ax2.axhline(0, color=\"black\", linewidth=0.8)\n    _ax2.plot(gdp_analysis[\"date\"], gdp_analysis[\"y\"], color=\"#990000\", linewidth=1.1)\n    _ax2.set(title=\"Annual GDP growth\", ylabel=\"Percent per year\", xlabel=\"Year\")\n    _fig.tight_layout()\n    _fig\n    return (gdp_analysis,)\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ### Estimate AR(1)\n    \"\"\")\n    return\n\n\n@app.cell\ndef _(gdp_analysis):\n    # Step 1: Create the lagged variable y_{t-1}.\n    ar1_data_with_lag = gdp_analysis.assign(y_lag=gdp_analysis[\"y\"].shift(1))\n    return (ar1_data_with_lag,)\n\n\n@app.cell\ndef _(ar1_data_with_lag):\n    # Step 2: Align each current observation y_t with its lag y_{t-1}.\n    ar1_data = ar1_data_with_lag[[\"date\", \"y\", \"y_lag\"]].dropna().reset_index(drop=True)\n    ar1_data\n    return (ar1_data,)\n\n\n@app.cell\ndef _(ar1_data, np, pd):\n    # Step 3: Estimate c and phi by regressing y_t on a constant and y_{t-1}.\n    X = np.column_stack((np.ones(len(ar1_data)), ar1_data[\"y_lag\"]))\n    y = ar1_data[\"y\"].to_numpy()\n    c_hat, phi_hat = np.linalg.lstsq(X, y, rcond=None)[0]\n    ar1_results = pd.DataFrame(\n        {\"estimate\": [c_hat, phi_hat, c_hat / (1 - phi_hat)]},\n        index=[\"intercept c\", \"persistence phi\", \"implied mean c/(1-phi)\"],\n    )\n    ar1_results\n    return c_hat, phi_hat\n\n\n@app.cell\ndef _(c_hat, mo, phi_hat):\n    stationarity_text = \"meets\" if abs(phi_hat) \u003C 1 else \"does not meet\"\n    inequality = \"\u003C\" if abs(phi_hat) \u003C 1 else \"\\\\geq\"\n    mo.md(\n        rf\"\"\"\n        The estimated model is\n\n        $$\n        y_t = {c_hat:.3f} + {phi_hat:.3f}y_{{t-1}} + \\widehat{{\\varepsilon}}_t.\n        $$\n\n        The estimate $\\hat\\phi={phi_hat:.3f}$ measures the predictive association\n        between last year's GDP growth and this year's GDP growth. Since\n        $|\\hat\\phi|{inequality}1$, the fitted AR(1) {stationarity_text} the usual\n        stationarity condition.\n        \"\"\"\n    )\n    return\n\n\n@app.cell\ndef _(ar1_data, c_hat, mo, phi_hat):\n    # Step 4: Use the final observed y_T as the forecast origin.\n    y_T = float(ar1_data[\"y\"].iloc[-1])\n    y_forecast = c_hat + phi_hat * y_T\n    mo.md(\n        rf\"\"\"\n        The final observed value is $y_T={y_T:.3f}$. Therefore the one-year-ahead\n        forecast is\n\n        $$\n        \\widehat{{y}}_{{T+1\\mid T}} = \\hat c + \\hat\\phi y_T\n        = {c_hat:.3f} + ({phi_hat:.3f})({y_T:.3f})\n        = {y_forecast:.3f}\\ \\text{{percent}}.\n        $$\n        \"\"\"\n    )\n    return\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ## Step 5. Perform an augmented Dickey\u2013Fuller (ADF) test\n\n    The ADF test helps us assess whether the growth series behaves as if it has\n    a unit root. A unit root means shocks may have permanent effects, which is\n    inconsistent with the usual stationary AR(1) interpretation.\n\n    The null hypothesis is that the series has a unit root. A small p-value is\n    evidence against the null; a large p-value means that we do not have enough\n    evidence to reject it. A large p-value is not proof that a unit root exists.\n\n    We include a constant but no deterministic trend because this test is for\n    the annual growth rate, not the trending GDP level. The result depends on\n    the deterministic terms, lag selection, sample period, structural breaks,\n    and data vintage, so use it together with the plot and the ACF.\n    \"\"\")\n    return\n\n\n@app.cell\ndef _(adfuller, gdp_analysis, pd):\n\n    _statistic, _p_value, _used_lags, _nobs, *_ = adfuller(\n        gdp_analysis[\"y\"].dropna(), regression=\"c\", autolag=\"AIC\", result_object=False\n    )\n    adf_results = pd.DataFrame(\n        {\"result\": [_statistic, _p_value, _used_lags, _nobs]},\n        index=[\"ADF statistic\", \"p-value\", \"lags used\", \"observations\"],\n    )\n    adf_results\n    return\n\n\n@app.cell\ndef _(gdp_analysis, mo, plot_acf, plt):\n    mo.md(r\"\"\"\n    ## Final diagnostic: the annual GDP-growth ACF\n\n    The lag-$k$ autocorrelation compares $y_t$ with $y_{t-k}$. Each bar is the\n    sample correlation between annual GDP growth and growth $k$ years earlier.\n    A bar outside the shaded bands is evidence that the correlation at that lag\n    differs from zero in this sample. For a stationary AR(1), the population\n    autocorrelation is $\\rho_k=\\phi^k$, so the ACF often decays toward zero. The\n    ACF is descriptive evidence, not proof that an AR(1) is the correct model.\n    \"\"\")\n    _fig, _ax = plt.subplots(figsize=(10, 4))\n    plot_acf(gdp_analysis[\"y\"].dropna(), lags=20, zero=False, ax=_ax, color=\"#990000\")\n    _ax.set(title=\"ACF: annual GDP growth\", xlabel=\"Lag (years)\", ylabel=\"Sample autocorrelation\")\n    _fig.tight_layout()\n    _fig\n    return\n\n\n@app.cell\ndef _(mo):\n    mo.md(r\"\"\"\n    ## Conclusion\n\n    We estimated an AR(1) for annual GDP growth, checked the growth series with\n    an ADF test, and inspected its autocorrelation pattern.\n    \"\"\")\n    return\n\n\nif __name__ == \"__main__\":\n    app.run()\n",
+        }),
+        writable: false,
+        configurable: false,
+    });
+</script>
+<marimo-code hidden="">%23%20%2F%2F%2F%20script%0A%23%20requires-python%20%3D%20%22%3E%3D3.11%22%0A%23%20dependencies%20%3D%20%5B%0A%23%20%20%20%20%20%22marimo%3E%3D0.15.0%22%2C%0A%23%20%20%20%20%20%22matplotlib%3E%3D3.8.0%22%2C%0A%23%20%20%20%20%20%22numpy%3E%3D2.0.0%22%2C%0A%23%20%20%20%20%20%22pandas%3E%3D2.2.0%22%2C%0A%23%20%20%20%20%20%22statsmodels%3E%3D0.14.0%22%2C%0A%23%20%5D%0A%23%20%2F%2F%2F%0A%0Aimport%20marimo%0A%0A__generated_with%20%3D%20%220.24.0%22%0Aapp%20%3D%20marimo.App(width%3D%22medium%22)%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20import%20marimo%20as%20mo%0A%0A%20%20%20%20return%20(mo%2C)%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%20Forecasting%20with%20AR%20and%20MA%20Models%0A%0A%20%20%20%20We%20first%20use%20a%20simulation%20to%20build%20intuition%20for%20persistence%20and%20mean%0A%20%20%20%20reversion.%20We%20then%20apply%20the%20four%20steps%20from%20the%20**Estimating%20an%20AR(1)**%0A%20%20%20%20slide%20to%20annual%20GDP%20growth.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell(hide_code%3DTrue)%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20Note%3A%20This%20notebook%20is%20in%20**Marimo**%20format.%20Variables%20beginning%20with%20an%0A%20%20%20%20underscore%20are%20local%20to%20their%20cell%20and%20are%20not%20saved%20in%20the%20notebook's%0A%20%20%20%20namespace.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_()%3A%0A%20%20%20%20from%20pathlib%20import%20Path%0A%0A%20%20%20%20import%20matplotlib.pyplot%20as%20plt%0A%20%20%20%20import%20numpy%20as%20np%0A%20%20%20%20import%20pandas%20as%20pd%0A%20%20%20%20from%20statsmodels.graphics.tsaplots%20import%20plot_acf%0A%20%20%20%20from%20statsmodels.tsa.stattools%20import%20adfuller%0A%0A%20%20%20%20plt.style.use(%22seaborn-v0_8-whitegrid%22)%0A%20%20%20%20return%20Path%2C%20adfuller%2C%20np%2C%20pd%2C%20plot_acf%2C%20plt%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%201.%20AR%20and%20MA%20models%3A%20persistence%20and%20mean%20reversion%0A%0A%20%20%20%20The%20first-order%20autoregressive%20model%20is%20the%20special%20case%20%24p%3D1%24%20of%0A%0A%20%20%20%20%24%24%0A%20%20%20%20Y_t%20%3D%20c%20%2B%20%5Csum_%7Bj%3D1%7D%5E%7Bp%7D%5Cfrac%7B%5Cphi%7D%7Bp%7DY_%7Bt-j%7D%20%2B%20%5Cvarepsilon_t%2C%0A%20%20%20%20%5Cqquad%20E(%5Cvarepsilon_t%5Cmid%5Cmathcal%20I_%7Bt-1%7D)%3D0.%0A%20%20%20%20%24%24%0A%0A%20%20%20%20Set%20%24p%3D1%24%20to%20recover%20the%20usual%20AR(1).%20The%20lag%20control%20below%20illustrates%0A%20%20%20%20an%20AR(%24p%24)%20extension%20in%20which%20the%20total%20lag%20weight%20remains%20%24%5Cphi%24.%0A%20%20%20%20When%20%24%7C%5Cphi%7C%3C1%24%2C%20its%20long-run%20mean%20is%20%24%5Cmu%3Dc%2F(1-%5Cphi)%24.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20phi_slider%20%3D%20mo.ui.slider(%0A%20%20%20%20%20%20%20%20start%3D-1.5%2C%20stop%3D1.50%2C%20step%3D0.05%2C%20value%3D0.75%2C%0A%20%20%20%20%20%20%20%20label%3Dr%22Persistence%20%24%5Cphi%24%22%2C%20show_value%3DTrue%2C%0A%20%20%20%20)%0A%20%20%20%20ar_lags_slider%20%3D%20mo.ui.slider(%0A%20%20%20%20%20%20%20%20start%3D1%2C%20stop%3D5%2C%20step%3D1%2C%20value%3D1%2C%0A%20%20%20%20%20%20%20%20label%3Dr%22Number%20of%20lags%20of%20%24Y_t%24%20(%24p%24)%22%2C%20show_value%3DTrue%2C%0A%20%20%20%20)%0A%20%20%20%20mo.hstack(%5Bphi_slider%2C%20ar_lags_slider%5D)%0A%20%20%20%20return%20ar_lags_slider%2C%20phi_slider%0A%0A%0A%40app.cell%0Adef%20_(ar_lags_slider%2C%20np%2C%20phi_slider%2C%20plt)%3A%0A%20%20%20%20_rng%20%3D%20np.random.default_rng(402)%0A%20%20%20%20_periods%20%3D%20120%0A%20%20%20%20_burn_in%20%3D%20100%0A%20%20%20%20_c%20%3D%200.5%0A%20%20%20%20_phi%20%3D%20phi_slider.value%0A%20%20%20%20_p%20%3D%20ar_lags_slider.value%0A%20%20%20%20_simulated%20%3D%20np.empty(_periods%20%2B%20_burn_in%20%2B%20_p)%0A%20%20%20%20_simulated%5B%3A_p%5D%20%3D%20_c%20%2F%20(1%20-%20_phi)%0A%20%20%20%20_shocks%20%3D%20_rng.normal(0%2C%201%2C%20size%3D_periods%20%2B%20_burn_in)%0A%20%20%20%20for%20_t%20in%20range(_p%2C%20len(_simulated))%3A%0A%20%20%20%20%20%20%20%20_simulated%5B_t%5D%20%3D%20_c%20%2B%20(_phi%20%2F%20_p)%20*%20_simulated%5B_t%20-%20_p%3A_t%5D.sum()%20%2B%20_shocks%5B_t%20-%20_p%5D%0A%0A%20%20%20%20_sample%20%3D%20_simulated%5B_burn_in%20%2B%20_p%3A%5D%0A%20%20%20%20_mean%20%3D%20_c%20%2F%20(1%20-%20_phi)%0A%20%20%20%20_fig%2C%20_ax%20%3D%20plt.subplots(figsize%3D(10%2C%203.6))%0A%20%20%20%20_ax.plot(_sample%2C%20color%3D%22%23006298%22%2C%20linewidth%3D1.4)%0A%20%20%20%20_ax.axhline(_mean%2C%20color%3D%22%23990000%22%2C%20linestyle%3D%22--%22%2C%20label%3Df%22Long-run%20mean%20%3D%20%7B_mean%3A.2f%7D%22)%0A%20%20%20%20_ax.set(title%3Df%22Simulated%20AR(%7B_p%7D)%2C%20phi%20%3D%20%7B_phi%3A.2f%7D%22%2C%20xlabel%3D%22Period%22%2C%20ylabel%3D%22%24Y_t%24%22)%0A%20%20%20%20_ax.legend()%0A%20%20%20%20_fig.tight_layout()%0A%20%20%20%20_fig%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.callout(%0A%20%20%20%20%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Move%20the%20sliders.%20Set%20%24p%3D1%24%20for%20the%20usual%20AR(1)%3B%20larger%20values%20%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%22include%20additional%20lags%20of%20%24Y_t%24.%20Positive%20values%20produce%20%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%22persistence%2C%20while%20negative%20values%20produce%20alternating%20movements.%22%0A%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20kind%3D%22info%22%2C%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%23%20MA(1)%3A%20temporary%20effects%20of%20an%20innovation%0A%0A%20%20%20%20A%20moving-average%20model%20expresses%20%24Y_t%24%20as%20a%20function%20of%20current%20and%20past%0A%20%20%20%20innovations%3A%0A%0A%20%20%20%20%24%24%0A%20%20%20%20Y_t%20%3D%20%5Cmu%20%2B%20%5Cvarepsilon_t%20%2B%20%5Ctheta%5Csum_%7Bj%3D1%7D%5E%7Bq%7D%5Cvarepsilon_%7Bt-j%7D.%0A%20%20%20%20%24%24%0A%0A%20%20%20%20Set%20%24q%3D1%24%20to%20obtain%20the%20standard%20MA(1).%20Unlike%20an%20AR%20model%2C%20the%20effect%20of%0A%20%20%20%20a%20shock%20disappears%20after%20the%20selected%20number%20of%20innovation%20lags.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20theta_slider%20%3D%20mo.ui.slider(%0A%20%20%20%20%20%20%20%20start%3D-1.5%2C%20stop%3D1.5%2C%20step%3D0.05%2C%20value%3D0.75%2C%0A%20%20%20%20%20%20%20%20label%3Dr%22Innovation%20coefficient%20%24%5Ctheta%24%22%2C%20show_value%3DTrue%2C%0A%20%20%20%20)%0A%20%20%20%20ma_lags_slider%20%3D%20mo.ui.slider(%0A%20%20%20%20%20%20%20%20start%3D1%2C%20stop%3D5%2C%20step%3D1%2C%20value%3D1%2C%0A%20%20%20%20%20%20%20%20label%3Dr%22Number%20of%20lags%20of%20%24%5Cvarepsilon_t%24%20(%24q%24)%22%2C%20show_value%3DTrue%2C%0A%20%20%20%20)%0A%20%20%20%20mo.hstack(%5Btheta_slider%2C%20ma_lags_slider%5D)%0A%20%20%20%20return%20ma_lags_slider%2C%20theta_slider%0A%0A%0A%40app.cell%0Adef%20_(ma_lags_slider%2C%20np%2C%20plt%2C%20theta_slider)%3A%0A%20%20%20%20_rng%20%3D%20np.random.default_rng(402)%0A%20%20%20%20_periods%20%3D%20120%0A%20%20%20%20_burn_in%20%3D%2010%0A%20%20%20%20_mu%20%3D%200.0%0A%20%20%20%20_theta%20%3D%20theta_slider.value%0A%20%20%20%20_q%20%3D%20ma_lags_slider.value%0A%20%20%20%20_shocks%20%3D%20_rng.normal(0%2C%201%2C%20size%3D_periods%20%2B%20_burn_in%20%2B%20_q)%0A%20%20%20%20_simulated%20%3D%20np.empty(_periods%20%2B%20_burn_in)%0A%20%20%20%20for%20_t%20in%20range(_periods%20%2B%20_burn_in)%3A%0A%20%20%20%20%20%20%20%20_simulated%5B_t%5D%20%3D%20_mu%20%2B%20_shocks%5B_t%20%2B%20_q%5D%20%2B%20_theta%20*%20_shocks%5B_t%3A_t%20%2B%20_q%5D.sum()%0A%0A%20%20%20%20_sample%20%3D%20_simulated%5B_burn_in%3A%5D%0A%20%20%20%20_fig%2C%20_ax%20%3D%20plt.subplots(figsize%3D(10%2C%203.6))%0A%20%20%20%20_ax.plot(_sample%2C%20color%3D%22%23006298%22%2C%20linewidth%3D1.4)%0A%20%20%20%20_ax.axhline(_mu%2C%20color%3D%22%23990000%22%2C%20linestyle%3D%22--%22%2C%20label%3Df%22Mean%20%3D%20%7B_mu%3A.2f%7D%22)%0A%20%20%20%20_ax.set(title%3Df%22Simulated%20MA(%7B_q%7D)%2C%20theta%20%3D%20%7B_theta%3A.2f%7D%22%2C%20xlabel%3D%22Period%22%2C%20ylabel%3D%22%24Y_t%24%22)%0A%20%20%20%20_ax.legend()%0A%20%20%20%20_fig.tight_layout()%0A%20%20%20%20_fig%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%202.%20GDP%20levels%20versus%20annual%20GDP%20growth%0A%0A%20%20%20%20We%20use%20the%20annual%20%60FYGDP%60%20series%20in%20%60FYGDP.csv%60.%20The%20GDP%20level%20trends%20over%0A%20%20%20%20time%2C%20so%20we%20study%20its%20annual%20log%20growth%20rate%3A%0A%0A%20%20%20%20%24%24%0A%20%20%20%20y_t%20%3D%20100%5C%2C%5B%5Clog(FYGDP_t)-%5Clog(FYGDP_%7Bt-1%7D)%5D.%0A%20%20%20%20%24%24%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo%2C%20pd)%3A%0A%20%20%20%20data_path%20%3D%20mo.notebook_location()%20%2F%20%22public%22%20%2F%20%22FYGDP.csv%22%0A%20%20%20%20gdp%20%3D%20pd.read_csv(str(data_path)%2C%20parse_dates%3D%5B%22observation_date%22%5D)%0A%20%20%20%20gdp%20%3D%20gdp.rename(columns%3D%7B%22observation_date%22%3A%20%22date%22%7D).sort_values(%22date%22)%0A%20%20%20%20gdp%20%3D%20gdp.reset_index(drop%3DTrue)%0A%20%20%20%20gdp%0A%20%20%20%20return%20(gdp%2C)%0A%0A%0A%40app.cell%0Adef%20_(gdp%2C%20np%2C%20plt)%3A%0A%20%20%20%20gdp_analysis%20%3D%20gdp.assign(y%3D100%20*%20np.log(gdp%5B%22FYGDP%22%5D).diff())%0A%0A%20%20%20%20_fig%2C%20(_ax1%2C%20_ax2)%20%3D%20plt.subplots(2%2C%201%2C%20figsize%3D(10%2C%207)%2C%20sharex%3DTrue)%0A%20%20%20%20_ax1.plot(gdp_analysis%5B%22date%22%5D%2C%20gdp_analysis%5B%22FYGDP%22%5D%2C%20color%3D%22%23006298%22)%0A%20%20%20%20_ax1.set(title%3D%22Annual%20GDP%20level%22%2C%20ylabel%3D%22FYGDP%22)%0A%20%20%20%20_ax2.axhline(0%2C%20color%3D%22black%22%2C%20linewidth%3D0.8)%0A%20%20%20%20_ax2.plot(gdp_analysis%5B%22date%22%5D%2C%20gdp_analysis%5B%22y%22%5D%2C%20color%3D%22%23990000%22%2C%20linewidth%3D1.1)%0A%20%20%20%20_ax2.set(title%3D%22Annual%20GDP%20growth%22%2C%20ylabel%3D%22Percent%20per%20year%22%2C%20xlabel%3D%22Year%22)%0A%20%20%20%20_fig.tight_layout()%0A%20%20%20%20_fig%0A%20%20%20%20return%20(gdp_analysis%2C)%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%23%20Estimate%20AR(1)%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(gdp_analysis)%3A%0A%20%20%20%20%23%20Step%201%3A%20Create%20the%20lagged%20variable%20y_%7Bt-1%7D.%0A%20%20%20%20ar1_data_with_lag%20%3D%20gdp_analysis.assign(y_lag%3Dgdp_analysis%5B%22y%22%5D.shift(1))%0A%20%20%20%20return%20(ar1_data_with_lag%2C)%0A%0A%0A%40app.cell%0Adef%20_(ar1_data_with_lag)%3A%0A%20%20%20%20%23%20Step%202%3A%20Align%20each%20current%20observation%20y_t%20with%20its%20lag%20y_%7Bt-1%7D.%0A%20%20%20%20ar1_data%20%3D%20ar1_data_with_lag%5B%5B%22date%22%2C%20%22y%22%2C%20%22y_lag%22%5D%5D.dropna().reset_index(drop%3DTrue)%0A%20%20%20%20ar1_data%0A%20%20%20%20return%20(ar1_data%2C)%0A%0A%0A%40app.cell%0Adef%20_(ar1_data%2C%20np%2C%20pd)%3A%0A%20%20%20%20%23%20Step%203%3A%20Estimate%20c%20and%20phi%20by%20regressing%20y_t%20on%20a%20constant%20and%20y_%7Bt-1%7D.%0A%20%20%20%20X%20%3D%20np.column_stack((np.ones(len(ar1_data))%2C%20ar1_data%5B%22y_lag%22%5D))%0A%20%20%20%20y%20%3D%20ar1_data%5B%22y%22%5D.to_numpy()%0A%20%20%20%20c_hat%2C%20phi_hat%20%3D%20np.linalg.lstsq(X%2C%20y%2C%20rcond%3DNone)%5B0%5D%0A%20%20%20%20ar1_results%20%3D%20pd.DataFrame(%0A%20%20%20%20%20%20%20%20%7B%22estimate%22%3A%20%5Bc_hat%2C%20phi_hat%2C%20c_hat%20%2F%20(1%20-%20phi_hat)%5D%7D%2C%0A%20%20%20%20%20%20%20%20index%3D%5B%22intercept%20c%22%2C%20%22persistence%20phi%22%2C%20%22implied%20mean%20c%2F(1-phi)%22%5D%2C%0A%20%20%20%20)%0A%20%20%20%20ar1_results%0A%20%20%20%20return%20c_hat%2C%20phi_hat%0A%0A%0A%40app.cell%0Adef%20_(c_hat%2C%20mo%2C%20phi_hat)%3A%0A%20%20%20%20stationarity_text%20%3D%20%22meets%22%20if%20abs(phi_hat)%20%3C%201%20else%20%22does%20not%20meet%22%0A%20%20%20%20inequality%20%3D%20%22%3C%22%20if%20abs(phi_hat)%20%3C%201%20else%20%22%5C%5Cgeq%22%0A%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20rf%22%22%22%0A%20%20%20%20%20%20%20%20The%20estimated%20model%20is%0A%0A%20%20%20%20%20%20%20%20%24%24%0A%20%20%20%20%20%20%20%20y_t%20%3D%20%7Bc_hat%3A.3f%7D%20%2B%20%7Bphi_hat%3A.3f%7Dy_%7B%7Bt-1%7D%7D%20%2B%20%5Cwidehat%7B%7B%5Cvarepsilon%7D%7D_t.%0A%20%20%20%20%20%20%20%20%24%24%0A%0A%20%20%20%20%20%20%20%20The%20estimate%20%24%5Chat%5Cphi%3D%7Bphi_hat%3A.3f%7D%24%20measures%20the%20predictive%20association%0A%20%20%20%20%20%20%20%20between%20last%20year's%20GDP%20growth%20and%20this%20year's%20GDP%20growth.%20Since%0A%20%20%20%20%20%20%20%20%24%7C%5Chat%5Cphi%7C%7Binequality%7D1%24%2C%20the%20fitted%20AR(1)%20%7Bstationarity_text%7D%20the%20usual%0A%20%20%20%20%20%20%20%20stationarity%20condition.%0A%20%20%20%20%20%20%20%20%22%22%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(ar1_data%2C%20c_hat%2C%20mo%2C%20phi_hat)%3A%0A%20%20%20%20%23%20Step%204%3A%20Use%20the%20final%20observed%20y_T%20as%20the%20forecast%20origin.%0A%20%20%20%20y_T%20%3D%20float(ar1_data%5B%22y%22%5D.iloc%5B-1%5D)%0A%20%20%20%20y_forecast%20%3D%20c_hat%20%2B%20phi_hat%20*%20y_T%0A%20%20%20%20mo.md(%0A%20%20%20%20%20%20%20%20rf%22%22%22%0A%20%20%20%20%20%20%20%20The%20final%20observed%20value%20is%20%24y_T%3D%7By_T%3A.3f%7D%24.%20Therefore%20the%20one-year-ahead%0A%20%20%20%20%20%20%20%20forecast%20is%0A%0A%20%20%20%20%20%20%20%20%24%24%0A%20%20%20%20%20%20%20%20%5Cwidehat%7B%7By%7D%7D_%7B%7BT%2B1%5Cmid%20T%7D%7D%20%3D%20%5Chat%20c%20%2B%20%5Chat%5Cphi%20y_T%0A%20%20%20%20%20%20%20%20%3D%20%7Bc_hat%3A.3f%7D%20%2B%20(%7Bphi_hat%3A.3f%7D)(%7By_T%3A.3f%7D)%0A%20%20%20%20%20%20%20%20%3D%20%7By_forecast%3A.3f%7D%5C%20%5Ctext%7B%7Bpercent%7D%7D.%0A%20%20%20%20%20%20%20%20%24%24%0A%20%20%20%20%20%20%20%20%22%22%22%0A%20%20%20%20)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%20Step%205.%20Perform%20an%20augmented%20Dickey%E2%80%93Fuller%20(ADF)%20test%0A%0A%20%20%20%20The%20ADF%20test%20helps%20us%20assess%20whether%20the%20growth%20series%20behaves%20as%20if%20it%20has%0A%20%20%20%20a%20unit%20root.%20A%20unit%20root%20means%20shocks%20may%20have%20permanent%20effects%2C%20which%20is%0A%20%20%20%20inconsistent%20with%20the%20usual%20stationary%20AR(1)%20interpretation.%0A%0A%20%20%20%20The%20null%20hypothesis%20is%20that%20the%20series%20has%20a%20unit%20root.%20A%20small%20p-value%20is%0A%20%20%20%20evidence%20against%20the%20null%3B%20a%20large%20p-value%20means%20that%20we%20do%20not%20have%20enough%0A%20%20%20%20evidence%20to%20reject%20it.%20A%20large%20p-value%20is%20not%20proof%20that%20a%20unit%20root%20exists.%0A%0A%20%20%20%20We%20include%20a%20constant%20but%20no%20deterministic%20trend%20because%20this%20test%20is%20for%0A%20%20%20%20the%20annual%20growth%20rate%2C%20not%20the%20trending%20GDP%20level.%20The%20result%20depends%20on%0A%20%20%20%20the%20deterministic%20terms%2C%20lag%20selection%2C%20sample%20period%2C%20structural%20breaks%2C%0A%20%20%20%20and%20data%20vintage%2C%20so%20use%20it%20together%20with%20the%20plot%20and%20the%20ACF.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(adfuller%2C%20gdp_analysis%2C%20pd)%3A%0A%0A%20%20%20%20_statistic%2C%20_p_value%2C%20_used_lags%2C%20_nobs%2C%20*_%20%3D%20adfuller(%0A%20%20%20%20%20%20%20%20gdp_analysis%5B%22y%22%5D.dropna()%2C%20regression%3D%22c%22%2C%20autolag%3D%22AIC%22%2C%20result_object%3DFalse%0A%20%20%20%20)%0A%20%20%20%20adf_results%20%3D%20pd.DataFrame(%0A%20%20%20%20%20%20%20%20%7B%22result%22%3A%20%5B_statistic%2C%20_p_value%2C%20_used_lags%2C%20_nobs%5D%7D%2C%0A%20%20%20%20%20%20%20%20index%3D%5B%22ADF%20statistic%22%2C%20%22p-value%22%2C%20%22lags%20used%22%2C%20%22observations%22%5D%2C%0A%20%20%20%20)%0A%20%20%20%20adf_results%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(gdp_analysis%2C%20mo%2C%20plot_acf%2C%20plt)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%20Final%20diagnostic%3A%20the%20annual%20GDP-growth%20ACF%0A%0A%20%20%20%20The%20lag-%24k%24%20autocorrelation%20compares%20%24y_t%24%20with%20%24y_%7Bt-k%7D%24.%20Each%20bar%20is%20the%0A%20%20%20%20sample%20correlation%20between%20annual%20GDP%20growth%20and%20growth%20%24k%24%20years%20earlier.%0A%20%20%20%20A%20bar%20outside%20the%20shaded%20bands%20is%20evidence%20that%20the%20correlation%20at%20that%20lag%0A%20%20%20%20differs%20from%20zero%20in%20this%20sample.%20For%20a%20stationary%20AR(1)%2C%20the%20population%0A%20%20%20%20autocorrelation%20is%20%24%5Crho_k%3D%5Cphi%5Ek%24%2C%20so%20the%20ACF%20often%20decays%20toward%20zero.%20The%0A%20%20%20%20ACF%20is%20descriptive%20evidence%2C%20not%20proof%20that%20an%20AR(1)%20is%20the%20correct%20model.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20_fig%2C%20_ax%20%3D%20plt.subplots(figsize%3D(10%2C%204))%0A%20%20%20%20plot_acf(gdp_analysis%5B%22y%22%5D.dropna()%2C%20lags%3D20%2C%20zero%3DFalse%2C%20ax%3D_ax%2C%20color%3D%22%23990000%22)%0A%20%20%20%20_ax.set(title%3D%22ACF%3A%20annual%20GDP%20growth%22%2C%20xlabel%3D%22Lag%20(years)%22%2C%20ylabel%3D%22Sample%20autocorrelation%22)%0A%20%20%20%20_fig.tight_layout()%0A%20%20%20%20_fig%0A%20%20%20%20return%0A%0A%0A%40app.cell%0Adef%20_(mo)%3A%0A%20%20%20%20mo.md(r%22%22%22%0A%20%20%20%20%23%23%20Conclusion%0A%0A%20%20%20%20We%20estimated%20an%20AR(1)%20for%20annual%20GDP%20growth%2C%20checked%20the%20growth%20series%20with%0A%20%20%20%20an%20ADF%20test%2C%20and%20inspected%20its%20autocorrelation%20pattern.%0A%20%20%20%20%22%22%22)%0A%20%20%20%20return%0A%0A%0Aif%20__name__%20%3D%3D%20%22__main__%22%3A%0A%20%20%20%20app.run()%0A</marimo-code></head>
+  <body>
+    <div id="root"></div>
+    <script data-marimo="true">
+      Object.defineProperty(window, "__MARIMO_MOUNT_CONFIG__", {
+        value: Object.freeze({
+            "filename": "notebook.py",
+            "cwd": "",
+            "lspWorkspace": null,
+            "mode": "read",
+            "version": "0.24.0",
+            "serverToken": "unused",
+            "config": {"ai": {"custom_providers": {}, "enabled": true, "models": {"custom_models": [], "displayed_models": []}}, "completion": {"activate_on_typing": true, "auto_close_pairs": true, "copilot": false, "signature_hint_on_typing": false}, "diagnostics": {"sql_linter": true}, "display": {"cell_output": "below", "code_editor_font_size": 14, "code_lens": true, "dataframes": "rich", "default_table_max_columns": 50, "default_table_page_size": 10, "default_width": "medium", "reference_highlighting": true, "theme": "light"}, "formatting": {"line_length": 79}, "keymap": {"overrides": {}, "preset": "default"}, "language_servers": {"pylsp": {"enable_flake8": false, "enable_mypy": true, "enable_pydocstyle": false, "enable_pyflakes": false, "enable_pylint": false, "enable_ruff": true, "enabled": false}}, "mcp": {"mcpServers": {}, "presets": []}, "package_management": {"manager": "uv"}, "runtime": {"auto_instantiate": false, "auto_reload": "off", "default_csv_encoding": "utf-8", "default_sql_output": "auto", "on_cell_change": "autorun", "output_max_bytes": 8000000, "reactive_tests": true, "show_tracebacks": false, "std_stream_max_bytes": 1000000, "watcher_on_save": "lazy"}, "save": {"autosave": "off", "autosave_delay": 1000, "format_on_save": false}, "server": {"browser": "default", "follow_symlink": false}, "snippets": {"custom_paths": [], "include_default_snippets": true}},
+            "configOverrides": {},
+            "appConfig": {"sql_output": "auto", "width": "medium"},
+            "view": {"showAppCode": false},
+            "notebook": null,
+            "session": null,
+            "runtimeConfig": null,
+        }),
+        writable: false,
+        configurable: false,
+      });
+    </script>
+  </body>
+</html>

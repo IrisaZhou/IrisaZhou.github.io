@@ -1,3 +1,4 @@
 _site/
 Gemfile.lock
 node_modules/
+assets/e402/output_dir/
