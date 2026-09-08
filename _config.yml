@@ -14,6 +14,11 @@ kramdown:
 
 include:
   - _pages
+  - assets/e402/output_dir/assets/_baseSet-DehVzRp6.js
+  - assets/e402/output_dir/assets/_hasPath-D0QK37mF.js
+  - assets/e402/output_dir/assets/_initCloneObject-7OOScFCJ.js
+  - assets/e402/output_dir/assets/__vite-browser-external-DeX3BBVP.js
+  - assets/e402/output_dir/assets/__vite-browser-external-mTzvI0UM.js
 
 exclude:
   - AGENTS.md
