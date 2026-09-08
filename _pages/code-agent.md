@@ -15,15 +15,15 @@ _styles: >
 
 This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time. My goal is to share what actually works (and what doesn't) when integrating code agents into an economics research workflow, based on my own hands-on experience. If you're early in your PhD and want to use AI to get more done without yet having a strong command of the literature or a highly specialized skill set, this is for you. A note upfront: all of the content here is produced from my own input with the help of code agents.
 
-Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Copilot, Cursor, and Codex as well — the underlying ideas carry across tools.
+Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Codex as well. In fact, I switched between Claude and Codex often. Currently, I am on Codex.
 
 <div class="alert alert-info" role="alert" markdown="1">
 
 **My setup when I share this:**
 
-- Primarily Mac user, but sometimes use Windows for large dataset handling
-- Finishing my PhD in Economics
-- Claude Pro plan · GitHub Copilot Student Free Version · Cursor Pro plan
+- Primarily Mac user, but sometimes use Windows
+<!-- - Finishing my PhD in Economics -->
+- ChatGPT Pro plan · GitHub Copilot · Cursor Pro
 
 </div>
 
@@ -49,6 +49,14 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </div>
 
+  <a href="/code-agent/saving-tokens/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
+    <span class="guide-num me-3">5</span>
+    <div>
+      <strong>Saving Tokens in My Process</strong><br>
+      <small class="text-muted">How I reduce token usage without sacrificing quality — practical habits and settings that add up</small>
+    </div>
+  </a>
+
   <a href="/code-agent/comparing-copilot-claude-codex/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">3</span>
     <div>
@@ -65,11 +73,4 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
     </div>
   </a>
 
-  <a href="/code-agent/saving-tokens/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">5</span>
-    <div>
-      <strong>Saving Tokens in My Process</strong><br>
-      <small class="text-muted">How I reduce token usage without sacrificing quality — practical habits and settings that add up</small>
-    </div>
-  </a>
 </div>

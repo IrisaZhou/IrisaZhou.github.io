@@ -3,8 +3,72 @@ layout: page
 title: Saving Tokens in My Process
 permalink: /code-agent/saving-tokens/
 nav: false
-_styles: >
-  .post-header { display: none; }
+_styles: |
+  .post-header {
+    display: none;
+  }
+
+  .research-section-header {
+    border-bottom-color: var(--accent);
+    color: var(--text);
+    margin-bottom: 1.75rem;
+  }
+
+  .page .col-md-8 > ol {
+    counter-reset: token-tip;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page .col-md-8 > ol > li {
+    background: color-mix(in srgb, var(--accent) 5%, var(--bg));
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 0.55rem;
+    counter-increment: token-tip;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.15rem 1rem 3.35rem;
+    position: relative;
+  }
+
+  .page .col-md-8 > ol > li::before {
+    align-items: center;
+    background: var(--accent);
+    border-radius: 50%;
+    color: var(--bg);
+    content: counter(token-tip);
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: 700;
+    height: 1.75rem;
+    justify-content: center;
+    left: 0.9rem;
+    position: absolute;
+    top: 0.95rem;
+    width: 1.75rem;
+  }
+
+  .page .col-md-8 > ol > li > ol {
+    border-top: 1px solid var(--border);
+    margin-top: 0.9rem;
+    padding-top: 0.75rem;
+  }
+
+  .page .col-md-8 li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .page .col-md-8 li + li {
+    margin-top: 0.65rem;
+  }
+
+  @media (max-width: 700px) {
+    .page .col-md-8 > ol > li {
+      padding-left: 3.1rem;
+    }
+  }
 ---
 
 <h2 class="research-section-header">Saving Tokens in My Process</h2>

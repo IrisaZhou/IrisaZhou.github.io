@@ -26,7 +26,7 @@ _styles: >
   </div>
   <div class="paper-info">
     <p class="paper-title">Learning the Major-Industry Mismatch</p>
-    <p class="paper-meta">Updated Draft: April 2026</p>
+    <p class="paper-meta">Updated Draft: Jan 2026</p>
     <p class="paper-meta">
       Presented at: CES NA (2025), CEA (2025), University of Toronto (2025)
     </p>
@@ -83,7 +83,7 @@ _styles: >
     <p class="paper-title">
       Searching in the Housing Market with Non-Committed Prices
     </p>
-    <p class="paper-meta">Updated Draft: April 2026</p>
+    <p class="paper-meta">Updated Draft: May 2026</p>
     <p class="paper-meta">
       Presented at: CEA (2024), University of Toronto (2023)
     </p>
@@ -142,7 +142,7 @@ _styles: >
     <p class="paper-authors">
       <em>with <a href="https://ziqingyan.com/" target="_blank">Ziqing Yan</a></em>
     </p>
-    <p class="paper-meta">Updated Draft: April 2026</p>
+    <p class="paper-meta">Updated Draft: May 2026</p>
     <details class="paper-abstract">
       <summary>Abstract</summary>
       <div class="abstract-body">
