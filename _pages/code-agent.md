@@ -50,7 +50,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
   </div>
 
   <a href="/code-agent/saving-tokens/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">5</span>
+    <span class="guide-num me-3">3</span>
     <div>
       <strong>Saving Tokens in My Process</strong><br>
       <small class="text-muted">How I reduce token usage without sacrificing quality — practical habits and settings that add up</small>
@@ -58,7 +58,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
   </a>
 
   <a href="/code-agent/comparing-copilot-claude-codex/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">3</span>
+    <span class="guide-num me-3">4</span>
     <div>
       <strong>Comparing Across Agents & Chat Interfaces</strong><br>
       <small class="text-muted">Copilot vs. Claude vs. Codex</small>
@@ -66,7 +66,7 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
   </a>
 
   <a href="/code-agent/skills-and-mcps/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
-    <span class="guide-num me-3">4</span>
+    <span class="guide-num me-3">5</span>
     <div>
       <strong>Sharing Skills & MCPs I Used and Created</strong><br>
       <small class="text-muted">Curated integrations, shortcuts, and tools that have made the biggest difference</small>
