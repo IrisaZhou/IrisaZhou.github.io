@@ -342,7 +342,7 @@ def _(mo):
 def _(adfuller, gdp_analysis, pd):
 
     _statistic, _p_value, _used_lags, _nobs, *_ = adfuller(
-        gdp_analysis["y"].dropna(), regression="c", autolag="AIC", result_object=False
+        gdp_analysis["y"].dropna(), regression="c", autolag="AIC"
     )
     adf_results = pd.DataFrame(
         {"result": [_statistic, _p_value, _used_lags, _nobs]},

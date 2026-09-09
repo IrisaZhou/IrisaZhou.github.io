@@ -34,21 +34,36 @@ def _():
 
 @app.cell
 def _(mo):
-    mo.md("""
-    # Solow growth model
+    mo.md(r"""
+    # Solow Growth Model
 
-    This demonstration uses the capital-per-worker law of motion
+    Let $k_t$ denote capital per worker in period $t$. Its law of motion is
 
-    `capital_next = (saving_rate * productivity * capital**capital_share
-    + (1 - depreciation_rate) * capital) / (1 + population_growth_rate)`
+    $$
+    k_{t+1}
+    = \frac{s A k_t^{\alpha} + (1-\delta)k_t}{1+n},
+    $$
 
-    At a steady state, capital per worker is constant. The steady-state
-    condition is
+    where $s$ is the saving rate, $A$ is productivity, $\alpha$ is capital's
+    share of income, $\delta$ is the depreciation rate, and $n$ is the
+    population growth rate. Output per worker is
 
-    `saving_rate * output(capital_star) =
-    (depreciation_rate + population_growth_rate) * capital_star`
+    $$
+    y_t = A k_t^{\alpha}.
+    $$
 
-    where `output(capital) = productivity * capital**capital_share`.
+    At the steady state $k^\ast$, capital per worker is constant. Therefore,
+
+    $$
+    s A (k^\ast)^{\alpha} = (\delta+n)k^\ast,
+    $$
+
+    which implies
+
+    $$
+    k^\ast
+    = \left(\frac{sA}{\delta+n}\right)^{\frac{1}{1-\alpha}}.
+    $$
     """)
     return
 
@@ -145,14 +160,20 @@ def _(
     mo.hstack(
         [
             mo.md(
-                f"""
+                rf"""
                 **Steady-state values**
 
-                `capital_star = {capital_star:.2f}`
+                $$
+                k^\ast = {capital_star:.2f},
+                \qquad
+                y^\ast = {output_star:.2f}.
+                $$
 
-                `output_star = {output_star:.2f}`
+                At $k^\ast$, investment equals break-even investment:
 
-                The steady state solves `investment = break_even investment`
+                $$
+                sA(k^\ast)^\alpha = (\delta+n)k^\ast.
+                $$
                 """
             ),
             _fig_curves,
@@ -171,12 +192,12 @@ def _(
 
 @app.cell
 def _(mo):
-    mo.md("""
+    mo.md(r"""
     ## Capital transitions
 
     The next plot starts one economy below the steady state and another
     above it. Both use the same parameters and converge toward the same
-    steady-state capital per worker.
+    steady-state capital per worker, $k^\ast$.
     """)
     return
 
@@ -249,7 +270,7 @@ def _(
 
 @app.cell
 def _(mo):
-    mo.md("""
+    mo.md(r"""
     ## The `Solow` class
 
     The class below follows the object-oriented implementation from the
