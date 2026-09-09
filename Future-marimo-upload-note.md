@@ -1,4 +1,3 @@
-
 update: 2026/09/08
 
 The GitHub Actions approach is feasible and is now live.
@@ -17,7 +16,7 @@ Changes made:
 - Added the marimo export step to [.github/workflows/deploy.yml](C:/Users/izhou/Documents/IrisaZhou.github.io/.github/workflows/deploy.yml)
 - Moved the source notebook to [apps/e402/ar-ma-models.py](C:/Users/izhou/Documents/IrisaZhou.github.io/apps/e402/ar-ma-models.py)
 - Placed the dataset at [apps/e402/public/FYGDP.csv](C:/Users/izhou/Documents/IrisaZhou.github.io/apps/e402/public/FYGDP.csv)
-- Updated [_pages/e402.md](C:/Users/izhou/Documents/IrisaZhou.github.io/_pages/e402.md)
+- Updated [\_pages/e402.md](C:/Users/izhou/Documents/IrisaZhou.github.io/_pages/e402.md)
 - Removed the large generated bundle from Git
 - Added notebook instructions in [apps/README.md](C:/Users/izhou/Documents/IrisaZhou.github.io/apps/README.md)
 
@@ -40,6 +39,7 @@ Adding future notebooks
    ```text
    apps/e402/topic-2.py
    ```
+
 2. Keep the inline dependency block at the beginning of the notebook:
 
    ```python
@@ -51,11 +51,13 @@ Adding future notebooks
    # ]
    # ///
    ```
+
 3. Put local data beside the notebook in its `public` directory:
 
    ```text
    apps/e402/public/my-data.csv
    ```
+
 4. Load browser-side data using the same `pyfetch` pattern found in the AR/MA notebook. This avoids the GitHub Pages CSV compression problem we encountered.
 5. Add the page link to the relevant Markdown page. A notebook at:
 
@@ -68,6 +70,7 @@ Adding future notebooks
    ```text
    /assets/marimo/e402/topic-2/
    ```
+
 6. Run the required checks, then commit and push:
 
    ```powershell
