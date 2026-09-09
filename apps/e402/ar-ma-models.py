@@ -64,7 +64,7 @@ def _(mo):
     The first-order autoregressive model is the special case $p=1$ of
 
     $$
-    Y_t = c + \sum_{j=1}^{p}\frac{\phi}{p}Y_{t-j} + \varepsilon_t,
+    Y_t = c + \sum_{j=1}^{p}{\phi_p}Y_{t-j} + \varepsilon_t,
     \qquad E(\varepsilon_t\mid\mathcal I_{t-1})=0.
     $$
 
