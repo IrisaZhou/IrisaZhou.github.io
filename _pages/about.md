@@ -12,10 +12,10 @@ profile:
     <div class="profile-name">Irisa Zhou</div>
     <div class="profile-uni">Indiana University Bloomington</div>
     <div class="profile-icons">
-      <a href="mailto:izhou@iu.edu" title="Email" style="color: #d93025;"><i class="fa-solid fa-envelope"></i></a>
+      <a href="mailto:irisa.x.zhou@gmail.com" title="Email" style="color: #d93025;"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://github.com/IrisaZhou" title="GitHub" style="color: #24292e;"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/irisa-zhou" title="LinkedIn" style="color: #0077b5;"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://raw.githubusercontent.com/IrisaZhou/papers/main/docs/CV_Irisa_Zhou_public.pdf" title="CV" target="_blank" class="cv-link">CV</a>
+      <a href="https://www.irisazhou.com/papers/CV_public.pdf" title="CV" target="_blank" class="cv-link">CV</a>
     </div>
 
 hide_header: true
