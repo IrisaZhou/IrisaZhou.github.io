@@ -1,7 +1,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
-#     "marimo>=0.24.0",
+#     "marimo>=0.23.3",
 #     "matplotlib>=3.8.0",
 #     "numpy>=2.0.0",
 # ]
@@ -19,7 +19,7 @@ equations and code use the same names throughout the demonstration.
 
 import marimo
 
-__generated_with = "0.24.0"
+__generated_with = "0.24.2"
 app = marimo.App(width="full")
 
 
@@ -184,6 +184,7 @@ def _(
         capital_share,
         capital_star,
         depreciation_rate,
+        output_star,
         population_growth_rate,
         productivity,
         saving_rate,
@@ -228,6 +229,7 @@ def _(
     depreciation_rate,
     mo,
     np,
+    output_star,
     periods_slider,
     plt,
     population_growth_rate,
@@ -251,7 +253,6 @@ def _(
     above_path = path_from(above_initial_slider.value, _periods_transition)
     below_output_path = productivity * below_path**capital_share
     above_output_path = productivity * above_path**capital_share
-    output_star = productivity * capital_star**capital_share
     time = np.arange(_periods_transition + 1)
 
     _fig_transition, (_ax_capital, _ax_output) = plt.subplots(1, 2, figsize=(13, 5))
@@ -316,77 +317,6 @@ def _(
     )
     return
 
-
-@app.cell
-def _(mo):
-    mo.md(r"""
-    ## The `Solow` class
-
-    The class below follows the object-oriented implementation from the
-    Jupyter notebook. Each object stores its current capital per worker,
-    updates it one period at a time, and can generate a complete path.
-    """)
-    return
-
-
-@app.class_definition
-class Solow:
-    """Solow growth model with a discrete capital update rule."""
-
-    def __init__(
-        self,
-        population_growth_rate=0.05,
-        saving_rate=0.25,
-        depreciation_rate=0.1,
-        capital_share=0.3,
-        productivity=2.0,
-        capital=1.0,
-    ):
-        self.population_growth_rate = population_growth_rate
-        self.saving_rate = saving_rate
-        self.depreciation_rate = depreciation_rate
-        self.capital_share = capital_share
-        self.productivity = productivity
-        self.capital = capital
-
-    def steady_state(self):
-        """Return the steady-state capital per worker."""
-        return (
-            self.saving_rate * self.productivity
-            / (self.population_growth_rate + self.depreciation_rate)
-        ) ** (1 / (1 - self.capital_share))
-
-    def output(self, capital=None):
-        """Return output per worker at the supplied capital level."""
-        if capital is None:
-            capital = self.capital
-        return self.productivity * capital**self.capital_share
-
-    def investment(self, capital=None):
-        """Return investment per worker at the supplied capital level."""
-        return self.saving_rate * self.output(capital)
-
-    def break_even_investment(self, capital=None):
-        """Return investment needed to keep capital per worker constant."""
-        if capital is None:
-            capital = self.capital
-        return (self.population_growth_rate + self.depreciation_rate) * capital
-
-    def update(self):
-        """Update capital per worker one period forward."""
-        self.capital = (
-            self.saving_rate * self.productivity * self.capital**self.capital_share
-            + (1 - self.depreciation_rate) * self.capital
-        ) / (1 + self.population_growth_rate)
-        return self.capital
-
-    def generate_sequence(self, periods):
-        """Return a capital-per-worker path of the requested length."""
-        path = []
-        for _ in range(periods):
-            path.append(self.capital)
-            self.update()
-        return path
 
 if __name__ == "__main__":
     app.run()
