@@ -13,15 +13,15 @@ _styles: >
 
 <h2 class="research-section-header">My Code Agent Experience</h2>
 
-This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time. 
+This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time.
 
-My goal is to share [what actually works (and what doesn't)](/code-agent/what-works/) when integrating code agents into an economics research workflow, based on my own hands-on experience. 
+My goal is to share [what actually works (and what doesn't)](/code-agent/what-works/) when integrating code agents into an economics research workflow, based on my own hands-on experience.
 
 <!-- If you're early in your PhD and want to use AI to get more done without yet having a strong command of the literature or a highly specialized skill set, this is for you.  -->
 
-Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Codex as well. 
+Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Codex as well.
 
-In fact, I switched between Claude and Codex often. Currently, I am on Codex. I find it to be more efficient and understanding of my current workflow. 
+In fact, I switched between Claude and Codex often. Currently, I am on Codex. I find it to be more efficient and understanding of my current workflow.
 
 A note upfront: all of the content here is produced from my own input with the help of code agents.
 
@@ -43,16 +43,14 @@ A note upfront: all of the content here is produced from my own input with the h
   <a href="/code-agent/getting-started/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">1</span>
     <div>
-      <strong>Getting Started</strong><br>
-      <small class="text-muted">Setting up the environment · Understanding the basics in under three minutes</small>
+      <strong>Getting Started</strong>
     </div>
   </a>
 
   <div class="list-group-item d-flex align-items-start py-3">
     <span class="guide-num me-3">2</span>
     <div>
-      <a href="/code-agent/workflow/" class="text-decoration-none text-dark"><strong>A Typical Example of My Workflow</strong></a><br>
-      <small class="text-muted">Different settings, different tasks, different approaches — how I actually use these tools day to day</small>
+      <a href="/code-agent/workflow/" class="text-decoration-none text-dark"><strong>A Typical Example of My Workflow</strong></a>
       <div class="mt-1" style="padding-left: 0.6rem; border-left: 2px solid #dee2e6;">
         <a href="/code-agent/what-works/" class="text-muted d-block" style="font-size: 0.8rem;">↳ What Works vs. What Doesn't Work</a>
       </div>
@@ -62,24 +60,21 @@ A note upfront: all of the content here is produced from my own input with the h
   <a href="/code-agent/saving-tokens/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">3</span>
     <div>
-      <strong>Saving Tokens in My Process</strong><br>
-      <small class="text-muted">How I reduce token usage without sacrificing quality — practical habits and settings that add up</small>
+      <strong>Saving Tokens in My Process</strong>
     </div>
   </a>
 
   <a href="/code-agent/comparing-copilot-claude-codex/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">4</span>
     <div>
-      <strong>Comparing Across Agents & Chat Interfaces</strong><br>
-      <small class="text-muted">Copilot vs. Claude vs. Codex</small>
+      <strong>Comparing Across Agents & Chat Interfaces</strong>
     </div>
   </a>
 
   <a href="/code-agent/skills-and-mcps/" class="list-group-item list-group-item-action d-flex align-items-start py-3">
     <span class="guide-num me-3">5</span>
     <div>
-      <strong>Sharing Skills & MCPs I Used and Created</strong><br>
-      <small class="text-muted">Curated integrations, shortcuts, and tools that have made the biggest difference</small>
+      <strong>Sharing Skills & MCPs I Used and Created</strong>
     </div>
   </a>
 
