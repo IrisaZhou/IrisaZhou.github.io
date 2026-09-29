@@ -25,4 +25,4 @@ Another series is sharing my experience with code agents for junior economists. 
 
 <br>
 
-Disclaimer: all resources involved a lot of my input + AI facilitation.
+Disclaimer: all resources involved a combination of my input + AI facilitation.

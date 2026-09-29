@@ -13,9 +13,17 @@ _styles: >
 
 <h2 class="research-section-header">My Code Agent Experience</h2>
 
-This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time. My goal is to share what actually works (and what doesn't) when integrating code agents into an economics research workflow, based on my own hands-on experience. If you're early in your PhD and want to use AI to get more done without yet having a strong command of the literature or a highly specialized skill set, this is for you. A note upfront: all of the content here is produced from my own input with the help of code agents.
+This page is a personal guide to using AI code agents as a junior economist — not from the perspective of a seasoned researcher with deep domain expertise, but from someone learning both economics and AI tooling at the same time. 
 
-Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Codex as well. In fact, I switched between Claude and Codex often. Currently, I am on Codex.
+My goal is to share [what actually works (and what doesn't)](/code-agent/what-works/) when integrating code agents into an economics research workflow, based on my own hands-on experience. 
+
+<!-- If you're early in your PhD and want to use AI to get more done without yet having a strong command of the literature or a highly specialized skill set, this is for you.  -->
+
+Two resources that have helped me a great deal are [Claude Blattman](https://claudeblattman.com/) and the [claude-howto](https://github.com/luongnv89/claude-howto) guide on GitHub. Both are written primarily with Claude in mind, but in practice I have found they translate very naturally to Codex as well. 
+
+In fact, I switched between Claude and Codex often. Currently, I am on Codex. I find it to be more efficient and understanding of my current workflow. 
+
+A note upfront: all of the content here is produced from my own input with the help of code agents.
 
 <div class="alert alert-info" role="alert" markdown="1">
 
@@ -23,7 +31,9 @@ Two resources that have helped me a great deal are [Claude Blattman](https://cla
 
 - Primarily Mac user, but sometimes use Windows
 <!-- - Finishing my PhD in Economics -->
-- ChatGPT Pro plan · GitHub Copilot · Cursor Pro
+- ChatGPT Pro plan · GitHub Copilot · VS Code
+- I use code agents for a variety of tasks by breaking it down as described in [Sample Workflow](/_pages/code-agent-sample-workflow.md) and [Learning New Knowledge](/_pages/code-agent-learning-new-knowledge.md).
+- My work towards "allocative efficiency" of tokens are summarized in [Saving Tokens in My Process](/code-agent/saving-tokens/) and [What Works vs. What Doesn't Work](/code-agent/what-works/).
 
 </div>
 

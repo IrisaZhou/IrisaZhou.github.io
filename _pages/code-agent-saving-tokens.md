@@ -73,6 +73,8 @@ _styles: |
 
 <h2 class="research-section-header">Saving Tokens in My Process</h2>
 
+Read the Do's and Don'ts in [What Works vs. What Doesn't Work →](/code-agent/what-works/).
+
 <div class="row">
 <div class="col-md-8 col-lg-9" markdown="1">
 
