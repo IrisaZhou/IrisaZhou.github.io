@@ -16,7 +16,7 @@ I have created a series of Marimo notebooks (Accessable directly via links below
   - [Topic 1: AR/MA models]({{ "/assets/marimo/e402/ar-ma-models/" | relative_url }})
   - [Topic 2: Solow Growth Model]({{ "/assets/marimo/e402/Solow_demonstrate/" | relative_url }})
   - [Topic 3: Numerical Functions Illustrations]({{ "/assets/marimo/e402/Numerical_Functions_Illustrations/" | relative_url }})
-  - [Topic 4: 2-Period Consumption-Saving Model](https://github.com/IrisaZhou/IrisaZhou.github.io/blob/main/apps/e402/CakeEating_2periods.py)
+  - [Topic 4: 2-Period Consumption-Saving Model]({{ "/assets/marimo/e402/CakeEating_2periods/" | relative_url }})
 
 <br>
 
