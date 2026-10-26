@@ -42,7 +42,7 @@ jobs:
             relative_path="${notebook#apps/}"
             output_path="_site/assets/marimo/${relative_path%.py}"
             echo "Exporting ${notebook} to ${output_path}"
-            uvx marimo==0.24.0 export html-wasm --sandbox \
+            uvx marimo==0.25.1 export html-wasm --sandbox \
               "${notebook}" -o "${output_path}" --mode run
           done
       - uses: actions/configure-pages@v5

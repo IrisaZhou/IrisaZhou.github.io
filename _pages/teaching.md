@@ -17,6 +17,7 @@ I have created a series of Marimo notebooks (Accessable directly via links below
   - [Topic 2: Solow Growth Model]({{ "/assets/marimo/e402/Solow_demonstrate/" | relative_url }})
   - [Topic 3: Numerical Functions Illustrations]({{ "/assets/marimo/e402/Numerical_Functions_Illustrations/" | relative_url }})
   - [Topic 4: 2-Period Consumption-Saving Model]({{ "/assets/marimo/e402/CakeEating_2periods/" | relative_url }})
+  - [Topic 5: The New Keynesian Model]({{ "/assets/marimo/e402/build_04_new_keynesian_materials/" | relative_url }})
 
 <br>
 
