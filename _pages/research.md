@@ -161,14 +161,6 @@ _styles: >
         individuals.
       </div>
     </details>
-    <div class="paper-links">
-      <a
-        href="https://irisazhou.github.io/papers/AI-Innovation-WP.pdf"
-        target="_blank"
-        class="paper-btn"
-        >PDF</a
-      >
-    </div>
   </div>
 </div>
 

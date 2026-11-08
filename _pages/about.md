@@ -47,8 +47,5 @@ Beyond my core research, I also enjoy developing tools and workflows to increase
 
 - **AI Workflow Optimization:** [Saving Tokens in My Process →](/code-agent/saving-tokens/) _(Updated Sept 2)_
 - **Interactive Intermediate Macroeconomics:**
-  - [Explore the New Keynesian Model Interactively →]({{ "/assets/marimo/e402/new_keynesian/" | relative_url }})
-  - [Explore Schelling’s Segregation Model Interactively →]({{ "/assets/marimo/e402/schelling/" | relative_url }})
-  - [Explore 2 Period Consumption-Savings Problem Interactively →](https://github.com/IrisaZhou/IrisaZhou.github.io/blob/main/apps/e402/CakeEating_2periods.py) _(Updated Oct 4th)_
-  - [Explore Simple Numerical Methods Interactively →](<{{ "/assets/marimo/e402/Numerical_Functions_Illustrations/" | relative_url }}>) _(Updated Sept 29)_
-  - [Explore the Solow Model Interactively →](/assets/marimo/e402/Solow_demonstrate/) _(Updated Sept 11)_
+  - [Explore Schelling’s Segregation Model Interactively →]({{ "/assets/marimo/e402/schelling/" | relative_url }}) _(Updated Nov 7)_
+  - [Explore the New Keynesian Model Interactively →]({{ "/assets/marimo/e402/new_keynesian/" | relative_url }}) _(Updated Oct 20)_
