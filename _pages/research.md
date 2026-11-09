@@ -115,7 +115,7 @@ _styles: >
 </div>
 
 <!-- ══════════════════════════════════════════════════════════════════
-     Paper 2 — AI and Returns to Experience in Entrepreneurship
+     Paper 2 — From Researchers to Entrepreneurs: AI and the Reallocation of Talent
      Figure:  place your image at  assets/img/papers/ai-figure.png
      ══════════════════════════════════════════════════════════════════ -->
 
@@ -130,17 +130,17 @@ _styles: >
   <div class="paper-figure">
     <img
       src="/assets/img/papers/ai-figure.png"
-      alt="AI and Returns to Experience figure"
+      alt="From Researchers to Entrepreneurs figure"
       data-zoomable
       style="width:210px; height:150px; object-fit:cover; border-radius:4px; cursor:zoom-in;"
     />
   </div>
   <div class="paper-info">
     <p class="paper-title">
-      AI and Returns to Experience in Entrepreneurship
+      From Researchers to Entrepreneurs: AI and the Reallocation of Talent
     </p>
     <p class="paper-authors">
-      <em>with <a href="https://ziqingyan.com/" target="_blank">Ziqing Yan</a></em>
+      <em>with <a href="https://ziqingyan.com/" target="_blank">Ziqing Yan</a> and <a href="https://yanranecon.github.io/" target="_blank">Yanran Guo</a></em>
     </p>
     <p class="paper-meta">Updated Draft: May 2026</p>
     <details class="paper-abstract">
@@ -161,6 +161,9 @@ _styles: >
         individuals.
       </div>
     </details>
+    <div class="paper-links">
+      <em>Significantly Updated Draft Coming Very Soon!</em>
+    </div>
   </div>
 </div>
 

@@ -1,6 +1,10 @@
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["marimo>=0.24.0", "matplotlib>=3.8", "numpy>=2.0"]
+# dependencies = [
+#     "marimo>=0.23.3",
+#     "matplotlib>=3.8",
+#     "numpy>=2.0",
+# ]
 # ///
 
 """Interactive Schelling model based on material/10_schelling.ipynb.
@@ -30,7 +34,7 @@ def _(mo):
     This simple model shows that even a small **preference** for neighbors of similar race can lead to high levels of segregation.
 
     ## Set Up
-    Suppose we have two types of people: orange people and green people. we will assume there are 250 of each type.
+    Suppose we have two types of people: orange people and green people. We will assume there are 100 of each type.
 
     These agents all live on a single unit square.
 
@@ -43,7 +47,7 @@ def _(mo):
     Nearest = 'Euclidean distance' in the unit square.
 
     ## Initialization
-    These 500 agents are initially randomly mixed together: each agent independently and randomly draws a location from a bivariate uniform distribution S = (0,1) x (0,1).
+    These 200 agents are initially randomly mixed together: each agent independently and randomly draws a location from a bivariate uniform distribution S = (0,1) x (0,1).
     """)
     return
 
@@ -103,7 +107,7 @@ def _(mo):
 
 @app.cell
 def _(np):
-    N_PER_TYPE = 250
+    N_PER_TYPE = 100
     MAX_ROUNDS = 25
 
     def neighbor_count(positions, types, agent_index, num_neighbors, candidate=None):
@@ -300,8 +304,8 @@ def _(mo):
 
     This walkthrough uses the orange and green simulation above. Each row is
     one complete round, starting from the positions at the end of the previous
-    round. Agents are visited in order: all 250 orange agents, then all 250
-    green agents. Move the orange slider first. Once it reaches 250, the green
+    round. Agents are visited in order: all 100 orange agents, then all 100
+    green agents. Move the orange slider first. Once it reaches 100, the green
     slider advances through the green agents. The buttons beside either slider
     move one agent at a time. A ring marks the last agent
     visited, and an arrow shows its move, if it moved. A flat step means that
@@ -319,10 +323,16 @@ def _(last_completed_round, mo):
 
 
 @app.cell
-def _(get_green_steps, get_orange_steps, mo, set_green_steps, set_orange_steps):
+def _(
+    get_green_steps,
+    get_orange_steps,
+    mo,
+    set_green_steps,
+    set_orange_steps,
+):
     orange_step_inputs = mo.ui.array([
         mo.ui.slider(
-            start=0, stop=250, step=1, value=get_orange_steps()[i],
+            start=0, stop=100, step=1, value=get_orange_steps()[i],
             label=f"Round {i + 1}: orange agents visited", show_value=True,
             on_change=lambda value, i=i: set_orange_steps(
                 lambda old: old[:i] + (int(value),) + old[i + 1:]
@@ -332,7 +342,7 @@ def _(get_green_steps, get_orange_steps, mo, set_green_steps, set_orange_steps):
     ])
     green_step_inputs = mo.ui.array([
         mo.ui.slider(
-            start=0, stop=250, step=1, value=get_green_steps()[i],
+            start=0, stop=100, step=1, value=get_green_steps()[i],
             label=f"Round {i + 1}: green agents visited", show_value=True,
             on_change=lambda value, i=i: set_green_steps(
                 lambda old: old[:i] + (int(value),) + old[i + 1:]
@@ -347,7 +357,7 @@ def _(get_green_steps, get_orange_steps, mo, set_green_steps, set_orange_steps):
 def _(last_completed_round, mo, set_green_steps, set_orange_steps):
     def _step(values, index, amount):
         updated = list(values)
-        updated[index] = max(0, min(250, updated[index] + amount))
+        updated[index] = max(0, min(100, updated[index] + amount))
         return tuple(updated)
 
     orange_minus_buttons = mo.ui.array([
@@ -387,17 +397,28 @@ def _(last_completed_round, mo, set_green_steps, set_orange_steps):
         for i in range(max(1, last_completed_round))
     ])
     return (
-        green_minus_buttons, green_plus_buttons,
-        orange_minus_buttons, orange_plus_buttons,
+        green_minus_buttons,
+        green_plus_buttons,
+        orange_minus_buttons,
+        orange_plus_buttons,
     )
 
 
 @app.cell(hide_code=True)
 def _(
-    get_green_steps, get_orange_steps,
-    green_minus_buttons, green_plus_buttons, green_step_inputs,
-    mo, np, orange_minus_buttons, orange_plus_buttons, orange_step_inputs,
-    plt, round_histories, stop_message,
+    get_green_steps,
+    get_orange_steps,
+    green_minus_buttons,
+    green_plus_buttons,
+    green_step_inputs,
+    mo,
+    np,
+    orange_minus_buttons,
+    orange_plus_buttons,
+    orange_step_inputs,
+    plt,
+    round_histories,
+    stop_message,
 ):
     _rows = []
     _orange_values = get_orange_steps()
@@ -405,21 +426,21 @@ def _(
 
     for _round_index, (_start, _after_each_agent) in enumerate(round_histories):
         _orange_count = _orange_values[_round_index]
-        _green_count = _green_values[_round_index] if _orange_count == 250 else 0
+        _green_count = _green_values[_round_index] if _orange_count == 100 else 0
         _positions = _start.copy()
         _positions[:_orange_count] = _after_each_agent[:_orange_count]
-        _positions[250:250 + _green_count] = _after_each_agent[250:250 + _green_count]
+        _positions[100:100 + _green_count] = _after_each_agent[100:100 + _green_count]
 
         _fig, _ax = plt.subplots(figsize=(5.2, 5.2))
         for _kind, _color in ((0, "#e68613"), (1, "#16845b")):
-            _mask = np.arange(500) < 250 if _kind == 0 else np.arange(500) >= 250
+            _mask = np.arange(200) < 100 if _kind == 0 else np.arange(200) >= 100
             _ax.scatter(
                 _positions[_mask, 0], _positions[_mask, 1],
                 c=_color, s=17, alpha=0.8, edgecolors="none",
             )
 
         _current = (
-            250 + _green_count - 1 if _green_count > 0
+            100 + _green_count - 1 if _green_count > 0
             else _orange_count - 1 if _orange_count > 0 else None
         )
         if _current is not None:
@@ -433,8 +454,8 @@ def _(
                     "", xy=_new, xytext=_old,
                     arrowprops={"arrowstyle": "->", "color": "black", "lw": 1.7},
                 )
-            _agent_type = "orange" if _current < 250 else "green"
-            _agent_number = _current + 1 if _current < 250 else _current - 249
+            _agent_type = "orange" if _current < 100 else "green"
+            _agent_number = _current + 1 if _current < 100 else _current - 99
             _action = "moved" if _did_move else "stayed"
             _agent_note = f"Agent {_agent_number} ({_agent_type}) {_action}"
         else:
@@ -461,7 +482,7 @@ def _(
                 f"Showing {_orange_count} orange and {_green_count} green updates"
             ),
             mo.md("Finish orange first to activate the green slider")
-            if _orange_count < 250 else mo.md("Green agents are now visited in order"),
+            if _orange_count < 100 else mo.md("Green agents are now visited in order"),
         ], gap=1)
         _rows.append(mo.hstack([_fig, _controls], widths=[1.15, 1], align="start", gap=2))
 
@@ -534,7 +555,7 @@ def _(
 def _(mo, type_count_input):
     agent_count_inputs = mo.ui.array(
         [
-            mo.ui.text(value="", placeholder="Enter a number", label=f"Type {i + 1}")
+            mo.ui.text(value="100", placeholder="Enter a number", label=f"Type {i + 1}")
             for i in range(type_count_input.value)
         ],
         label="Number of agents in each type",
