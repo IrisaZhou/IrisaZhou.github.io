@@ -12,6 +12,11 @@ This repository contains only Irisa Zhou's personal academic website.
 
 Do not reintroduce al-folio demo content, unused plugins, or unrelated portfolio features.
 
+## Content ordering
+
+- On the About page, list dated resources from newest to oldest.
+- On the Teaching page, list course topics from oldest to newest, with the latest topic last.
+
 ## Required checks
 
 After editing, run:
