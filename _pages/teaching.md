@@ -19,6 +19,7 @@ I have created a series of Marimo notebooks (Accessable directly via links below
   - [Topic 4: 2-Period Consumption-Saving Model]({{ "/assets/marimo/e402/CakeEating_2periods/" | relative_url }})
   - [Topic 5: The New Keynesian Model]({{ "/assets/marimo/e402/new_keynesian/" | relative_url }})
   - [Topic 6: Schelling Segregation Model]({{ "/assets/marimo/e402/schelling/" | relative_url }})
+  - [Topic 7: McCall Search Model]({{ "/assets/marimo/e402/mccall_model/" | relative_url }})
 
 <br>
 

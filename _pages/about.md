@@ -49,3 +49,4 @@ Beyond my core research, I also enjoy developing tools and workflows to increase
 - **Interactive Intermediate Macroeconomics:**
   - [Explore Schelling’s Segregation Model Interactively →]({{ "/assets/marimo/e402/schelling/" | relative_url }}) _(Updated Nov 7)_
   - [Explore the New Keynesian Model Interactively →]({{ "/assets/marimo/e402/new_keynesian/" | relative_url }}) _(Updated Oct 20)_
+  - [Explore the McCall Search Model Interactively →]({{ "/assets/marimo/e402/mccall_model/" | relative_url }}) _(Updated Nov 16)_
